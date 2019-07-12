@@ -1,0 +1,179 @@
+.c-icon {
+	display: inline-block;
+	width: $icon-widht;
+	height: $icon-height;
+	font-size: $icon-font;
+	position: relative;
+
+	// マル
+	&.m-circle {
+
+		> span {
+			position: absolute;
+			display: block;
+			top: 50%;
+			left: 50%;
+			width: 84%;
+			height: 84%;
+			margin: -42% 0 0 -42%;
+			border-radius: 50%;
+			border: 0.16em solid $color-key;
+		}
+	}
+
+	// バツ
+	&.m-cross {
+
+		> span {
+
+			&::before,
+			&::after {
+				display: block;
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 84%;
+				height: 16%;
+				margin: -8% 0 0 -42%;
+				background: $color-key;
+			}
+
+			&::before {
+				transform: rotate(-45deg);
+			}
+
+			&::after {
+				transform: rotate(45deg);
+			}
+		}
+	}
+
+	&.m-hamburger {
+
+		> span {
+			position: absolute;
+			display: block;
+			top: 50%;
+			left: 50%;
+			width: 84%;
+			height: 16%;
+			margin: -8% 0 0 -42%;
+			background: $color-key;
+
+			&::before,
+			&::after {
+				display: block;
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 100%;
+				height: 100%;
+				margin: -8% 0 0 -50%;
+				background: $color-key;
+			}
+
+			&::before {
+				margin-top: -38%;
+			}
+
+			&::after {
+				margin-top: 19%;
+			}
+		}
+	}
+
+	// チェック
+	&.m-check {
+
+		> span {
+			position: absolute;
+			display: block;
+			top: 50%;
+			left: 50%;
+			width: 84%;
+			height: 36%;
+			margin: -18% 0 0 -42%;
+			border-left: 0.16em solid $color-key;
+			border-bottom: 0.16em solid $color-key;
+			transform: rotate(-45deg);
+		}
+	}
+
+	// アロー
+	&.m-arrow {
+
+		> span {
+			position: absolute;
+			display: block;
+			top: 50%;
+			left: 50%;
+			width: 56%;
+			height: 56%;
+			margin: -28% 0 0 -36%;
+			border-right: 0.16em solid $color-key;
+			border-bottom: 0.16em solid $color-key;
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.m-triangle {
+
+	> span {
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		width: 0;
+		height: 0;
+		margin: -42% 0 0 -42%;
+		border-style: solid;
+		border-width: 0 0.42em 0.728em 0.42em;
+		border-color: transparent transparent $color-key transparent;
+	}
+}
+
+.m-rhombus {
+
+	> span {
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		width: 56%;
+		height: 56%;
+		margin: -28% 0 0 -28%;
+		background: $color-key;
+		transform: rotate(-45deg);
+	}
+}
+
+.m-glass {
+
+	> span {
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		width: 56%;
+		height: 56%;
+		border-radius: 50%;
+		margin: -0.28em 0 0 -0.28em;
+		border: 0.12em solid $color-key;
+
+		&::after {
+			position: absolute;
+			display: block;
+			content: "";
+			top: 50%;
+			left: 50%;
+			width: 72%;
+			height: 36%;
+			background: $color-key;
+			margin: 0.2em 0 0 0.14em;
+			transform: rotate(45deg);
+		}
+	}
+}
