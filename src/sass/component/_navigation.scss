@@ -1,0 +1,19 @@
+.c-navigation {
+	display: flex;
+
+	> li {
+		text-align: center;
+		position: relative;
+		margin-right: 16px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		> a {
+			text-decoration: none;
+			display: block;
+			transition: all 0.3s ease 0s;
+		}
+	}
+}

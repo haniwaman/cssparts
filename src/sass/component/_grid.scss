@@ -1,5 +1,6 @@
 .c-flex {
 	display: flex;
+	flex-wrap: wrap;
 
 	// 上下中央
 	&.m-middle {
@@ -11,13 +12,159 @@
 		justify-content: center;
 	}
 
-	// 折返えしあり
-	&.m-wrap {
-		flex-wrap: wrap;
+	// 反転
+	&.m-reverse {
+		flex-direction: row-reverse;
 	}
 
-	// 反転
-	&.m-row-reverse {
-		flex-direction: row-reverse;
+	// flexアイテム
+	> .e-col01 {
+		width: 1 / 12 * 100;
+	}
+
+	> .e-col02 {
+		width: 2 / 12 * 100%;
+	}
+
+	> .e-col03 {
+		width: 3 / 12 * 100%;
+	}
+
+	> .e-col04 {
+		width: 4 / 12 * 100%;
+	}
+
+	> .e-col05 {
+		width: 5 / 12 * 100%;
+	}
+
+	> .e-col06 {
+		width: 6 / 12 * 100%;
+	}
+
+	> .e-col07 {
+		width: 7 / 12 * 100%;
+	}
+
+	> .e-col08 {
+		width: 8 / 12 * 100%;
+	}
+
+	> .e-col09 {
+		width: 9 / 12 * 100%;
+	}
+
+	> .e-col10 {
+		width: 10 / 12 * 100%;
+	}
+
+	> .e-col11 {
+		width: 11 / 12 * 100%;
+	}
+
+	> .e-col12 {
+		width: 12 / 12 * 100%;
+	}
+
+	@include mq("tab") {
+
+		> .e-col01-tab {
+			width: 1 / 12 * 100;
+		}
+
+		> .e-col02-tab {
+			width: 2 / 12 * 100%;
+		}
+
+		> .e-col03-tab {
+			width: 3 / 12 * 100%;
+		}
+
+		> .e-col04-tab {
+			width: 4 / 12 * 100%;
+		}
+
+		> .e-col05-tab {
+			width: 5 / 12 * 100%;
+		}
+
+		> .e-col06-tab {
+			width: 6 / 12 * 100%;
+		}
+
+		> .e-col07-tab {
+			width: 7 / 12 * 100%;
+		}
+
+		> .e-col08-tab {
+			width: 8 / 12 * 100%;
+		}
+
+		> .e-col09-tab {
+			width: 9 / 12 * 100%;
+		}
+
+		> .e-col10-tab {
+			width: 10 / 12 * 100%;
+		}
+
+		> .e-col11-tab {
+			width: 11 / 12 * 100%;
+		}
+
+		> .e-col12-tab {
+			width: 12 / 12 * 100%;
+		}
+	}
+
+	@include mq("sp") {
+
+		> .e-col01-sp {
+			width: 1 / 12 * 100;
+		}
+
+		> .e-col02-sp {
+			width: 2 / 12 * 100%;
+		}
+
+		> .e-col03-sp {
+			width: 3 / 12 * 100%;
+		}
+
+		> .e-col04-sp {
+			width: 4 / 12 * 100%;
+		}
+
+		> .e-col05-sp {
+			width: 5 / 12 * 100%;
+		}
+
+		> .e-col06-sp {
+			width: 6 / 12 * 100%;
+		}
+
+		> .e-col07-sp {
+			width: 7 / 12 * 100%;
+		}
+
+		> .e-col08-sp {
+			width: 8 / 12 * 100%;
+		}
+
+		> .e-col09-sp {
+			width: 9 / 12 * 100%;
+		}
+
+		> .e-col10-sp {
+			width: 10 / 12 * 100%;
+		}
+
+		> .e-col11-sp {
+			width: 11 / 12 * 100%;
+		}
+
+		> .e-col12-sp {
+			width: 12 / 12 * 100%;
+		}
 	}
 }

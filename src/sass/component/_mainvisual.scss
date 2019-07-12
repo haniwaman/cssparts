@@ -1,0 +1,60 @@
+.c-mainvisual {
+	width: 100%;
+	min-height: 300px;
+	position: relative;
+	background: transparent url(../img/mainvisual.jpg) no-repeat center center / cover;
+	overflow: hidden;
+	font-size: 1rem;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(#000, 0.3);
+	}
+
+	.e-content {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		text-align: center;
+		font-weight: 700;
+		color: #fff;
+		padding: 0 $padding-x-sp;
+	}
+
+	.e-title {
+		font-size: 2em;
+	}
+
+	.e-lead {
+		font-size: 1em;
+		margin-top: 8px;
+	}
+
+	// 動画を背景
+	&.m-video {
+		background: none;
+
+		> .e-video {
+			position: absolute;
+			max-height: initial;
+			max-width: initial;
+			min-height: 100vh;
+			min-width: 100%;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: -1;
+		}
+	}
+
+	// ヒーローイメージ
+	&.m-hero {
+		min-height: initial;
+		height: 100vh;
+	}
+}

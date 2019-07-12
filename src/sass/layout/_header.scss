@@ -1,0 +1,8 @@
+.l-header {
+	width: 100%;
+	height: $header-height;
+
+	@include mq("sp") {
+		height: $header-height-sp;
+	}
+}
