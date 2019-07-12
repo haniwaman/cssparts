@@ -1,0 +1,23 @@
+.c-flex {
+	display: flex;
+
+	// 上下中央
+	&.m-middle {
+		align-items: center;
+	}
+
+	// 中央寄せ
+	&.m-center {
+		justify-content: center;
+	}
+
+	// 折返えしあり
+	&.m-wrap {
+		flex-wrap: wrap;
+	}
+
+	// 反転
+	&.m-row-reverse {
+		flex-direction: row-reverse;
+	}
+}

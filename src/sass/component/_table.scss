@@ -1,0 +1,61 @@
+.c-table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid $color-border--table;
+	width: 100%;
+	background: #fff;
+
+	th,
+	td {
+		border: 1px solid $color-border--table;
+		padding: 0.7em;
+	}
+
+	th {
+		font-weight: 700;
+	}
+
+	// 固定幅
+	&.m-fixed {
+		table-layout: fixed;
+	}
+
+	// 行をストライプ
+	&.m-striped {
+
+		tr:nth-of-type(even) {
+			background: #dee2e6;
+		}
+	}
+
+	// 横方向の罫線のみ
+	&.m-border-horizon {
+		border: none;
+
+		tr {
+			border-top: 1px solid $color-border--table;
+			border-bottom: 1px solid $color-border--table;
+
+			&:first-of-type {
+				border-top: none;
+			}
+
+			&:last-of-type {
+				border-bottom: none;
+			}
+		}
+
+		th,
+		td {
+			border: none;
+		}
+	}
+}
+
+// レスポンシブ
+.c-table-responsive {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}

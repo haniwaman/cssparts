@@ -1,0 +1,36 @@
+.c-btn {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.7em 2em;
+	margin: 0;
+	background-image: none;
+	background-color: $color-key;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	font-size: $font-size--base;
+	text-align: center;
+	-webkit-appearance: none;
+
+	&:not(:disabled) {
+		cursor: pointer;
+	}
+
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+
+	&::-moz-foucus-inner {
+		padding: 0;
+		border: none;
+	}
+
+	// ゴースト
+	&.m-goast {
+		background-color: transparent;
+		border-color: #fff;
+		color: $color-text;
+	}
+}

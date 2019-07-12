@@ -1,0 +1,23 @@
+// PC
+.u-hidden-pc {
+
+	@include mq("pc") {
+		display: none;
+	}
+}
+
+// タブレット
+.u-hidden-tab {
+
+	@include mq("tab+sp") {
+		display: none;
+	}
+}
+
+// スマホ
+.u-hidden-sp {
+
+	@include mq("sp") {
+		display: none;
+	}
+}
