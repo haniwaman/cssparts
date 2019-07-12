@@ -1,0 +1,32 @@
+.c-file-control {
+
+	label {
+		padding: 0.4em 0.8em;
+		border: 1px solid $color-border--form;
+		cursor: pointer;
+		background: #fff;
+		color: $color-text;
+		font-weight: $font-weight--base;
+		font-size: $font-size--base;
+	}
+
+	input[type="file"] {
+		display: none;
+	}
+}
+
+.c-file-result {
+	display: none;
+	width: 100%;
+	padding: 0.4em 0;
+	border-radius: 0;
+	background-image: none;
+	background-color: transparent;
+	border: none;
+	font-family: inherit;
+	font-size: 0.95em;
+	color: inherit;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}

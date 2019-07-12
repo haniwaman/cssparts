@@ -1,0 +1,55 @@
+.c-text {
+	width: auto;
+	padding: 0.4em 0.8em;
+	border-radius: 0;
+	background-image: none;
+	background-color: #fff;
+	border: 1px solid $color-border--form;
+	font-family: inherit;
+	font-size: 0.95em;
+	color: inherit;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border: 1px solid $color-border--form--foucs;
+	}
+
+	&.m-full {
+		width: 100%;
+	}
+}
+
+.c-textarea {
+	width: auto;
+	height: 100px;
+	padding: 0.4em 0.8em;
+	border-radius: 0;
+	background-image: none;
+	background-color: #fff;
+	border: 1px solid $color-border--form;
+	font-family: inherit;
+	font-size: 0.95em;
+	color: inherit;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	resize: none;
+
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border: 1px solid $color-border--form--foucs;
+	}
+
+	&.m-resize {
+		resize: both;
+	}
+
+	&.m-full {
+		width: 100%;
+	}
+}

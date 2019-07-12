@@ -1,0 +1,55 @@
+.c-checkbox {
+	display: none;
+
+	+ span {
+		display: inline-block;
+		position: relative;
+		padding: 0 0 0 1.6em;
+		margin: 0;
+		cursor: pointer;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			background: #fff;
+			border: 1px solid $color-border--form;
+			border-radius: 2px;
+			width: 1em;
+			height: 1em;
+			display: block;
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%) rotate(-45deg);
+			width: 1em;
+			height: 0.6em;
+			margin-top: -0.2em;
+			display: block;
+			border-left: 3px solid $color-key;
+			border-bottom: 3px solid $color-key;
+			transition: all 0.3s ease 0s;
+			opacity: 0;
+		}
+	}
+
+	&:checked {
+
+		+ span {
+
+			&::before {
+				border: 1px solid $color-border--form--foucs;
+			}
+
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+}
