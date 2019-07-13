@@ -1,0 +1,30 @@
+.c-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba($color-key, 0.78);
+	padding: 80px 30px;
+	z-index: map-get($layer, "modal");
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+
+	> .e-close {
+		position: absolute;
+		z-index: map-get($layer, "modal") + 1;
+		bottom: 16px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	> .e-content {
+		background: #fff;
+	}
+
+	&.is-checked {
+		opacity: 1;
+		visibility: visible;
+	}
+}

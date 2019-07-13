@@ -4,22 +4,27 @@ jQuery('.c-file-control input[type="file"]').change(function() {
 	jQuery(".c-file-result").text(jQuery(this).val());
 });
 
-// .c-drawer > .e-hamburger
-jQuery(".c-drawer > .e-hamburger, .c-drawer > .e-close").on("click", function() {
-	jQuery(this)
-		.parent(".c-drawer")
-		.toggleClass("is-checked");
-	if (
-		jQuery(this)
-			.parent(".c-drawer")
-			.hasClass("is-checked")
-	) {
-		jQuery(this)
+// .c-drawer
+jQuery(".js-drawer").on("click", function(e) {
+	e.preventDefault();
+	let target = jQuery(this).attr("data-target");
+	jQuery("#" + target).toggleClass("is-checked");
+	if (jQuery("#" + target).hasClass("is-checked")) {
+		jQuery("#" + target)
 			.children(".e-text")
 			.text("CLOSE");
 	} else {
-		jQuery(this)
+		jQuery("#" + target)
 			.children(".e-text")
 			.text("MENU");
 	}
+	return false;
+});
+
+// .c-modal
+jQuery(".js-modal").on("click", function(e) {
+	e.preventDefault();
+	let target = jQuery(this).attr("data-target");
+	jQuery("#" + target).toggleClass("is-checked");
+	return false;
 });

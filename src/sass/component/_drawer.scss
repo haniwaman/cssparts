@@ -1,10 +1,6 @@
 .c-drawer {
 	z-index: map-get($layer, "drawer");
 
-	@include mq("sp") {
-		display: block;
-	}
-
 	> .e-close {
 		display: none;
 		position: fixed;
