@@ -28,3 +28,11 @@ jQuery(".js-modal").on("click", function(e) {
 	jQuery("#" + target).toggleClass("is-checked");
 	return false;
 });
+
+// .c-accordion
+jQuery(".js-accordion").on("click", function(e) {
+	e.preventDefault();
+	let target = jQuery(this).attr("data-target");
+	jQuery("#" + target).slideToggle();
+	return false;
+});
