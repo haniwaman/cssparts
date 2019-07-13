@@ -1,0 +1,11 @@
+.c-marker {
+	display: inline;
+	background: linear-gradient(transparent 60%, $color-key 0);
+
+	&.m-cover {
+		color: #fff;
+		background: $color-key;
+		line-height: 2.2;
+		box-shadow: $marker-pd-y 0 $color-key, 0 $marker-pd-x $color-key, $marker-pd-y $marker-pd-x $color-key, (-$marker-pd-y) 0 $color-key, 0 (-$marker-pd-x) $color-key, (-$marker-pd-y) (-$marker-pd-x) $color-key, (-$marker-pd-y) $marker-pd-x $color-key, $marker-pd-y (-$marker-pd-x) $color-key;
+	}
+}

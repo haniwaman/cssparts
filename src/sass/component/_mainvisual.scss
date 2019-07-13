@@ -6,12 +6,15 @@
 	overflow: hidden;
 	font-size: 1rem;
 
-	&::before {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: rgba(#000, 0.3);
+	&.m-mask {
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: rgba(#000, 0.3);
+		}
 	}
 
 	.e-content {
@@ -23,7 +26,7 @@
 		text-align: center;
 		font-weight: 700;
 		color: #fff;
-		padding: 0 $padding-x-sp;
+		padding: 0 $pd-x-sp;
 	}
 
 	.e-title {

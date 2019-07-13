@@ -1,0 +1,36 @@
+.c-background {
+	width: 100%;
+	height: 300px;
+	background: transparent url(../img/background.jpg) no-repeat center center / cover;
+	position: relative;
+
+	> img {
+		object-fit: cover;
+		width: 100%;
+		height: inherit;
+	}
+
+	// マスク
+	&.m-mask {
+
+		&::before {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: rgba(#000, 0.3);
+		}
+	}
+
+	// 背景を固定
+	&.m-fixed {
+		background-attachment: fixed;
+	}
+
+	// ウインドウ幅いっぱいに広げる
+	&.m-borderless {
+		margin: 0 calc(50% - 50vw);
+		padding: 0 calc(50vw - 50%);
+		overflow: hidden;
+		width: 100vw;
+	}
+}

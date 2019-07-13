@@ -1,16 +1,16 @@
 .l-container {
 	margin: 0 auto;
-	padding: 0 $padding-x-pc;
+	padding: 0 $pd-x-pc;
 	width: $layout-width-container;
 	max-width: 100%;
 
 	@include mq("tab") {
-		padding-right: $padding-x-tab;
-		padding-left: $padding-x-tab;
+		padding-right: $pd-x-tab;
+		padding-left: $pd-x-tab;
 	}
 
 	@include mq("sp") {
-		padding-right: $padding-x-sp;
-		padding-left: $padding-x-sp;
+		padding-right: $pd-x-sp;
+		padding-left: $pd-x-sp;
 	}
 }

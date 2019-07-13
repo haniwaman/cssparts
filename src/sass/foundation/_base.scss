@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 html,
 body {
 	margin: 0;
@@ -20,6 +24,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
+	overflow-wrap: break-word;
 }
 
 article,
@@ -160,4 +165,10 @@ q::before {
 
 address {
 	font-style: normal;
+}
+
+input,
+textarea,
+select {
+	max-width: 100%;
 }

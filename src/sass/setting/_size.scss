@@ -26,11 +26,15 @@ $layer: (
 );
 
 // 余白
-$padding-x-pc: 0;
-$padding-x-tab: 24px;
-$padding-x-sp: 16px;
+$pd-x-pc: 0;
+$pd-x-tab: 24px;
+$pd-x-sp: 16px;
 
 // アイコン
 $icon-widht: 50px;
 $icon-height: 50px;
 $icon-font: 50px;
+
+// マーカー
+$marker-pd-x: 8px;
+$marker-pd-y: 24px;

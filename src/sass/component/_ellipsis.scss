@@ -1,0 +1,30 @@
+.c-ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+
+	// 複数行
+	&.m-multiple {
+		position: relative;
+		text-overflow: clip;
+		white-space: normal;
+		height: 2 * 3em; // line-height * 行数
+		line-height: 2;
+
+		&::before {
+			content: "...";
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			background: #fff;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: #fff;
+		}
+	}
+}
