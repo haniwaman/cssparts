@@ -3,23 +3,22 @@
 	text-decoration: none;
 	background: #fff;
 	position: relative;
-	font-size: 1rem;
 
 	> .e-img {
 		text-align: center;
 	}
 
 	> .e-body {
-		padding: 0.4em;
+		padding: 0.4rem;
 
 		.e-title {
-			font-size: 1.2em;
+			font-size: 1.2rem;
 			font-weight: 700;
-			margin: 0.4em 0;
+			margin: 0.4rem 0;
 		}
 
 		.e-excerpt {
-			font-size: 0.95em;
+			font-size: 0.95rem;
 			color: $color-text--thin;
 			margin: 0;
 		}
@@ -32,13 +31,13 @@
 
 		.e-time,
 		.e-label {
-			margin-bottom: 0.4em;
+			margin-bottom: 0.4rem;
 		}
 
 		.e-time {
 			display: block;
 			color: $color-text--thin;
-			font-size: 0.875em;
+			font-size: 0.875rem;
 		}
 
 		.e-label {
@@ -47,8 +46,8 @@
 			text-decoration: none;
 			background: $color-key;
 			color: #fff;
-			padding: 0.2em 0.8em;
-			font-size: 0.875em;
+			padding: 0.2rem 0.8rem;
+			font-size: 0.875rem;
 		}
 	}
 
@@ -57,12 +56,12 @@
 
 		> .e-img {
 			width: 150px;
-			padding: 0.4em;
+			padding: 0.4rem;
 		}
 
 		> .e-body {
 			width: calc(100% - 150px);
-			padding: 0.4em;
+			padding: 0.4rem;
 		}
 	}
 

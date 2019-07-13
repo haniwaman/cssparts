@@ -4,7 +4,6 @@
 	position: relative;
 	background: transparent url(../img/mainvisual.jpg) no-repeat center center / cover;
 	overflow: hidden;
-	font-size: 1rem;
 
 	&.m-mask {
 
@@ -30,11 +29,11 @@
 	}
 
 	.e-title {
-		font-size: 2em;
+		font-size: 2rem;
 	}
 
 	.e-lead {
-		font-size: 1em;
+		font-size: 1rem;
 		margin-top: 8px;
 	}
 

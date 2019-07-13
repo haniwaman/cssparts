@@ -1,0 +1,20 @@
+.c-breadcrumb {
+	display: flex;
+
+	> .e-item {
+		font-size: 0.875rem;
+
+		&:not(:last-child) {
+
+			&::after {
+				content: ">";
+				vertical-align: baseline;
+				margin: 0 0.6rem;
+			}
+		}
+
+		> a {
+			text-decoration: none;
+		}
+	}
+}

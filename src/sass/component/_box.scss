@@ -1,0 +1,150 @@
+.c-box {
+	display: inline-block;
+	background: #fff;
+	border: 2px solid $color-key;
+	border-radius: 0;
+	padding: 0.8rem;
+
+	> :last-child {
+		margin-bottom: 0;
+	}
+
+	> .e-title {
+		padding: 0.4rem;
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+
+	// 吹き出し右
+	&.m-balloo-right {
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 100%;
+		}
+
+		&::before {
+			margin-top: -12.82px;
+			border: 12.82px solid transparent;
+			border-left: 12.82px solid $color-key;
+			z-index: 1;
+		}
+
+		&::after {
+			margin-top: -10px;
+			border: 10px solid transparent;
+			border-left: 10px solid #fff;
+			z-index: 2;
+		}
+	}
+
+	// 吹き出し上
+	&.m-balloo-top {
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+		}
+
+		&::before {
+			margin-left: -12.82px;
+			border: 12.82px solid transparent;
+			border-bottom: 12.82px solid $color-key;
+			z-index: 1;
+		}
+
+		&::after {
+			margin-left: -10px;
+			border: 10px solid transparent;
+			border-bottom: 10px solid #fff;
+			z-index: 2;
+		}
+	}
+
+	// 吹き出し左
+	&.m-balloo-left {
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 100%;
+		}
+
+		&::before {
+			margin-top: -12.82px;
+			border: 12.82px solid transparent;
+			border-right: 12.82px solid $color-key;
+			z-index: 1;
+		}
+
+		&::after {
+			margin-top: -10px;
+			border: 10px solid transparent;
+			border-right: 10px solid #fff;
+			z-index: 2;
+		}
+	}
+
+	// 吹き出し下
+	&.m-balloo-bottom {
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+		}
+
+		&::before {
+			margin-left: -12.82px;
+			border: 12.82px solid transparent;
+			border-top: 12.82px solid $color-key;
+			z-index: 1;
+		}
+
+		&::after {
+			margin-left: -10px;
+			border: 10px solid transparent;
+			border-top: 10px solid #fff;
+			z-index: 2;
+		}
+	}
+
+	// 見出しがボーダーに被る
+	&.m-type1 {
+		position: relative;
+		padding-top: 1.8rem;
+
+		> .e-title {
+			position: absolute;
+			top: -1rem;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #fff;
+			white-space: nowrap;
+		}
+	}
+
+	&.m-type2 {
+
+		> .e-title {
+			background: #f44336;
+			color: #fff;
+			padding: 0.4rem 0.8rem;
+			margin: -0.8em -0.8rem 0.8rem -0.8rem;
+		}
+	}
+}
