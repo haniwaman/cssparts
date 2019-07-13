@@ -1,0 +1,27 @@
+.c-tab {
+	font-size: 1rem;
+
+	.e-nav {
+		display: flex;
+		justify-content: center;
+
+		.e-item {
+			display: block;
+			padding: 0.8em 1.6em;
+			background: #eee;
+
+			&.is-checked {
+				background: $color-key;
+				color: #fff;
+			}
+		}
+	}
+
+	.e-content {
+		display: none;
+
+		&.is-checked {
+			display: block;
+		}
+	}
+}
