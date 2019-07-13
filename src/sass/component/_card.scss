@@ -1,0 +1,72 @@
+.c-card {
+	display: inline-block;
+	text-decoration: none;
+	background: #fff;
+	position: relative;
+	font-size: 1rem;
+
+	> .e-img {
+		text-align: center;
+	}
+
+	> .e-body {
+		padding: 0.4em;
+
+		.e-title {
+			font-size: 1.2em;
+			font-weight: 700;
+			margin: 0.4em 0;
+		}
+
+		.e-excerpt {
+			font-size: 0.95em;
+			color: $color-text--thin;
+			margin: 0;
+		}
+	}
+
+	.e-meta {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		.e-time,
+		.e-label {
+			margin-bottom: 0.4em;
+		}
+
+		.e-time {
+			display: block;
+			color: $color-text--thin;
+			font-size: 0.875em;
+		}
+
+		.e-label {
+			margin-left: auto;
+			display: block;
+			text-decoration: none;
+			background: $color-key;
+			color: #fff;
+			padding: 0.2em 0.8em;
+			font-size: 0.875em;
+		}
+	}
+
+	&.m-horizon {
+		display: flex;
+
+		> .e-img {
+			width: 150px;
+			padding: 0.4em;
+		}
+
+		> .e-body {
+			width: calc(100% - 150px);
+			padding: 0.4em;
+		}
+	}
+
+	&.m-shadow {
+		box-shadow: 0 0 5px 0 rgba(#000, 0.16);
+	}
+}
