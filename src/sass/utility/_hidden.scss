@@ -9,7 +9,7 @@
 // タブレット
 .u-hidden-tab {
 
-	@include mq("tab+sp") {
+	@include mq("tab-only") {
 		display: none;
 	}
 }

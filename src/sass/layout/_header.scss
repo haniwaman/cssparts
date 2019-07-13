@@ -3,8 +3,8 @@
 	height: $header-height;
 	z-index: map-get($layer, "header");
 
-	@include mq("sp") {
-		height: $header-height-sp;
+	@include mq("tab") {
+		height: $header-height-pc;
 	}
 
 	// 固定

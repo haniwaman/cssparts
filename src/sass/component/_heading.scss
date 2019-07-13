@@ -1,0 +1,110 @@
+.c-heading {
+	padding: 0.4em 0.8em;
+
+	// 左のバーに破線の下線をプラスした見出し
+	&.m-type001 {
+		border-left: 0.4em solid $color-key;
+		border-bottom: 0.1em dotted #eee;
+		text-align: left;
+	}
+
+	// 上下のバーに挟まれた見出し
+	&.m-type002 {
+		border-top: 0.125em solid $color-key;
+		border-bottom: 0.125em solid $color-key;
+		text-align: left;
+	}
+
+	// 途中で色が変わる下線
+	&.m-type003 {
+		padding: 0.1em 0.4em;
+		border-bottom: solid 0.125em $color-key;
+		position: relative;
+		text-align: left;
+
+		&::after {
+			position: absolute;
+			content: "";
+			display: block;
+			left: 0;
+			bottom: -0.125em;
+			border-bottom: 0.125em solid #f44336;
+			width: 30%;
+			height: 100%;
+		}
+	}
+
+	// ステッチ風のポップな見出し
+	&.m-type004 {
+		background: #b2ebf2;
+		padding: 0.4em 0.6em 0.3em;
+		text-align: left;
+		box-shadow: 0 0 0 0.2083em #b2ebf2;
+		border: 0.0417em dashed rgb(76, 175, 80);
+		border-radius: 0;
+		color: rgb(121, 85, 72);
+	}
+
+	// 吹き出し風の見出し
+	&.m-type005 {
+		background: #b2ebf2;
+		padding: 0.4em 0.8em 0.3em;
+		text-align: left;
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: "";
+			top: 100%;
+			left: 30px;
+			border: 15px solid transparent;
+			border-top: 15px solid #b2ebf2;
+			width: 0;
+			height: 0;
+		}
+	}
+
+	// 点線の下線の見出し
+	&.m-type006 {
+		border-bottom: 0.08em dashed #2196f3;
+		text-align: left;
+	}
+
+	// 下線の見出し
+	&.m-type007 {
+		border-bottom: 0.125em solid #2196f3;
+		text-align: left;
+	}
+
+	// 左側がバーになっている見出し
+	&.m-type008 {
+		border-left: 0.2em solid #2196f3;
+		text-align: left;
+	}
+
+	// 背景色のみシンプルな見出し
+	&.m-type009 {
+		background: #009688;
+		text-align: left;
+		color: #fff;
+	}
+
+	// 端が折り曲がった見出し
+	&.m-type010 {
+		background: #efa336;
+		color: #fff;
+		position: relative;
+		text-align: left;
+
+		&::after {
+			border-color: #fff #fff #e7e7e7;
+			border-style: solid;
+			border-width: 0 16px 16px 0;
+			box-shadow: -1px 1px 1px rgba(#000, 0.16);
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+}

@@ -9,16 +9,16 @@
 	}
 
 	> .e-body {
-		padding: 0.4rem;
+		padding: 0.4em;
 
 		.e-title {
-			font-size: 1.2rem;
+			font-size: 1.2em;
 			font-weight: 700;
-			margin: 0.4rem 0;
+			margin: 0.4em 0;
 		}
 
 		.e-excerpt {
-			font-size: 0.95rem;
+			font-size: 0.95em;
 			color: $color-text--thin;
 			margin: 0;
 		}
@@ -31,13 +31,13 @@
 
 		.e-time,
 		.e-label {
-			margin-bottom: 0.4rem;
+			margin-bottom: 0.4em;
 		}
 
 		.e-time {
 			display: block;
 			color: $color-text--thin;
-			font-size: 0.875rem;
+			font-size: 0.875em;
 		}
 
 		.e-label {
@@ -46,8 +46,8 @@
 			text-decoration: none;
 			background: $color-key;
 			color: #fff;
-			padding: 0.2rem 0.8rem;
-			font-size: 0.875rem;
+			padding: 0.2em 0.8em;
+			font-size: 0.875em;
 		}
 	}
 
@@ -56,12 +56,12 @@
 
 		> .e-img {
 			width: 150px;
-			padding: 0.4rem;
+			padding: 0.4em;
 		}
 
 		> .e-body {
 			width: calc(100% - 150px);
-			padding: 0.4rem;
+			padding: 0.4em;
 		}
 	}
 

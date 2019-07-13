@@ -3,19 +3,19 @@
 	background: #fff;
 	border: 2px solid $color-key;
 	border-radius: 0;
-	padding: 0.8rem;
+	padding: 0.8em;
 
 	> :last-child {
 		margin-bottom: 0;
 	}
 
 	> .e-title {
-		padding: 0.4rem;
-		font-size: 1.2rem;
+		padding: 0.4em;
+		font-size: 1.2em;
 		font-weight: 700;
 	}
 
-	// 吹き出し右
+	// 右下向きの吹き出しボックス
 	&.m-balloo-right {
 		position: relative;
 
@@ -42,7 +42,7 @@
 		}
 	}
 
-	// 吹き出し上
+	// 上向きの吹き出しボックス
 	&.m-balloo-top {
 		position: relative;
 
@@ -69,7 +69,7 @@
 		}
 	}
 
-	// 吹き出し左
+	// 左向きの吹き出しボックス
 	&.m-balloo-left {
 		position: relative;
 
@@ -96,7 +96,7 @@
 		}
 	}
 
-	// 吹き出し下
+	// 下向きの吹き出しボックス
 	&.m-balloo-bottom {
 		position: relative;
 
@@ -123,14 +123,14 @@
 		}
 	}
 
-	// 見出しがボーダーに被る
+	// 見出しがボーダーに被るボックス
 	&.m-type1 {
 		position: relative;
-		padding-top: 1.8rem;
+		padding-top: 1.8em;
 
 		> .e-title {
 			position: absolute;
-			top: -1rem;
+			top: -1em;
 			left: 50%;
 			transform: translateX(-50%);
 			background: #fff;
@@ -138,13 +138,14 @@
 		}
 	}
 
+	// 見出しを塗りつぶしたボックス
 	&.m-type2 {
 
 		> .e-title {
 			background: #f44336;
 			color: #fff;
-			padding: 0.4rem 0.8rem;
-			margin: -0.8em -0.8rem 0.8rem -0.8rem;
+			padding: 0.4em 0.8em;
+			margin: -0.8em -0.8em 0.8em -0.8em;
 		}
 	}
 }

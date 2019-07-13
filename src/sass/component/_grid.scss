@@ -121,53 +121,53 @@
 		}
 	}
 
-	@include mq("sp") {
+	@include mq("pc") {
 
-		> .e-col01-sp {
+		> .e-col01-pc {
 			flex: 0 0 (1 / 12 * 100%);
 		}
 
-		> .e-col02-sp {
+		> .e-col02-pc {
 			flex: 0 0 (2 / 12 * 100%);
 		}
 
-		> .e-col03-sp {
+		> .e-col03-pc {
 			flex: 0 0 (3 / 12 * 100%);
 		}
 
-		> .e-col04-sp {
+		> .e-col04-pc {
 			flex: 0 0 (4 / 12 * 100%);
 		}
 
-		> .e-col05-sp {
+		> .e-col05-pc {
 			flex: 0 0 (5 / 12 * 100%);
 		}
 
-		> .e-col06-sp {
+		> .e-col06-pc {
 			flex: 0 0 (6 / 12 * 100%);
 		}
 
-		> .e-col07-sp {
+		> .e-col07-pc {
 			flex: 0 0 (7 / 12 * 100%);
 		}
 
-		> .e-col08-sp {
+		> .e-col08-pc {
 			flex: 0 0 (8 / 12 * 100%);
 		}
 
-		> .e-col09-sp {
+		> .e-col09-pc {
 			flex: 0 0 (9 / 12 * 100%);
 		}
 
-		> .e-col10-sp {
+		> .e-col10-pc {
 			flex: 0 0 (10 / 12 * 100%);
 		}
 
-		> .e-col11-sp {
+		> .e-col11-pc {
 			flex: 0 0 (11 / 12 * 100%);
 		}
 
-		> .e-col12-sp {
+		> .e-col12-pc {
 			flex: 0 0 (12 / 12 * 100%);
 		}
 	}
@@ -176,7 +176,7 @@
 	&.m-margin {
 
 		> .e-col {
-			padding: 0.8rem;
+			padding: 0.8em;
 		}
 	}
 }

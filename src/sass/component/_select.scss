@@ -1,6 +1,6 @@
 .c-select {
 	width: auto;
-	padding: 0.4rem 2.4rem 0.4rem 0.8rem;
+	padding: 0.4em 2.4em 0.4em 0.8em;
 	border-radius: 0;
 	background-color: #fff;
 	background-image: url(../img/arrow-select.png);
@@ -9,7 +9,7 @@
 	background-position: center right;
 	border: 1px solid $color-border--form;
 	font-family: inherit;
-	font-size: 1rem;
+	font-size: 1em;
 	color: inherit;
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -32,7 +32,7 @@
 		background-image: none;
 
 		option {
-			padding: 0.4rem 0.8rem;
+			padding: 0.4em 0.8em;
 		}
 	}
 
