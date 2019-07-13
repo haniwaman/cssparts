@@ -1,7 +1,11 @@
 // .c-file-control
-jQuery('.c-file-control input[type="file"]').change(function() {
-	jQuery(".c-file-result").show();
-	jQuery(".c-file-result").text(jQuery(this).val());
+jQuery(".js-file").change(function() {
+	jQuery(this)
+		.siblings(".c-file-result")
+		.show();
+	jQuery(this)
+		.siblings(".c-file-result")
+		.text(jQuery(this).val());
 });
 
 // .c-drawer

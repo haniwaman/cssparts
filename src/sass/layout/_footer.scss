@@ -1,3 +1,4 @@
 .l-footer {
 	width: 100%;
+	z-index: map-get($layer, "footer");
 }

@@ -1,8 +1,15 @@
 .l-header {
 	width: 100%;
 	height: $header-height;
+	z-index: map-get($layer, "header");
 
 	@include mq("sp") {
 		height: $header-height-sp;
+	}
+
+	&.m-fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
 	}
 }
