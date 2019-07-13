@@ -1,0 +1,99 @@
+.c-list {
+	padding: 0 0.6em;
+
+	li {
+		margin-bottom: 0.6em;
+
+		a {
+			display: block;
+			padding: 0.4em 0.8em;
+			text-decoration: none;
+			text-align: left;
+		}
+
+		ul {
+			padding-left: 0.6em;
+
+			li {
+				margin-top: 0.6em;
+			}
+		}
+	}
+
+	// 数字で順番にカウント
+	&.m-count {
+
+		> li {
+			counter-increment: number;
+
+			> a {
+				position: relative;
+				padding: 0.4em 0.8em 0.4em 2.4em;
+				text-decoration: none;
+				text-align: left;
+
+				&::after {
+					position: absolute;
+					top: 50%;
+					left: 0.4em;
+					min-width: 1.6em;
+					height: 1.6em;
+					line-height: 1;
+					text-align: center;
+					transform: translateY(-50%);
+					content: counter(number);
+					padding: 0.3em;
+					background: #f44336;
+					color: #fff;
+					font-size: 0.9em;
+				}
+			}
+		}
+	}
+
+	// 文字前にアイコンを設置（改行しても中央）の縦並びのメニュー
+	&.m-arrow-start {
+
+		li {
+
+			a {
+				position: relative;
+				padding: 0.4em 0.8em 0.4em 1.8em;
+
+				&::before {
+					position: absolute;
+					top: 50%;
+					left: 0.4em;
+					transform: translateY(-50%);
+					content: "";
+					width: 1em;
+					height: 1em;
+					background: transparent url(../img/arrow-right.png) no-repeat center center / cover;
+				}
+			}
+		}
+	}
+
+	// 文字の最後にアイコンをつけた縦並びのメニュー
+	&.m-arrow-end {
+
+		> li {
+
+			a {
+				position: relative;
+				padding: 0.4em 1.8em 0.4em 0.8em;
+
+				&::after {
+					position: absolute;
+					top: 50%;
+					right: 0.4em;
+					content: "";
+					width: 1em;
+					height: 1em;
+					background: transparent url(../img/arrow-right.png) no-repeat center center / cover;
+					transform: translateY(-50%);
+				}
+			}
+		}
+	}
+}
