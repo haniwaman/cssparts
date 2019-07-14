@@ -36,8 +36,12 @@ jQuery(".js-modal").on("click", function(e) {
 // .c-accordion
 jQuery(".js-accordion").on("click", function(e) {
 	e.preventDefault();
-	let target = jQuery(this).attr("data-target");
-	jQuery("#" + target).slideToggle();
+	jQuery(this)
+		.siblings(".js-accordion-content")
+		.slideToggle(500);
+	jQuery(this)
+		.parent(".c-accordion")
+		.toggleClass("is-checked");
 	return false;
 });
 
