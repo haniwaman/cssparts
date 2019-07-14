@@ -39,7 +39,7 @@
 		background: #b2ebf2;
 		padding: 0.4em 0.6em 0.3em;
 		text-align: left;
-		box-shadow: 0 0 0 0.2083em #b2ebf2;
+		box-shadow: 0 0 0 0.2em #b2ebf2;
 		border: 0.0417em dashed rgb(76, 175, 80);
 		border-radius: 0;
 		color: rgb(121, 85, 72);
@@ -47,7 +47,7 @@
 
 	// 吹き出し風の見出し
 	&.m-type005 {
-		background: #b2ebf2;
+		background: $color-key;
 		padding: 0.4em 0.8em 0.3em;
 		text-align: left;
 		position: relative;
@@ -58,7 +58,7 @@
 			top: 100%;
 			left: 30px;
 			border: 15px solid transparent;
-			border-top: 15px solid #b2ebf2;
+			border-top: 15px solid $color-key;
 			width: 0;
 			height: 0;
 		}
@@ -66,32 +66,32 @@
 
 	// 点線の下線の見出し
 	&.m-type006 {
-		border-bottom: 0.08em dashed #2196f3;
+		border-bottom: 0.08em dashed $color-key;
 		text-align: left;
 	}
 
 	// 下線の見出し
 	&.m-type007 {
-		border-bottom: 0.125em solid #2196f3;
+		border-bottom: 0.125em solid $color-key;
 		text-align: left;
 	}
 
 	// 左側がバーになっている見出し
 	&.m-type008 {
-		border-left: 0.2em solid #2196f3;
+		border-left: 0.2em solid $color-key;
 		text-align: left;
 	}
 
 	// 背景色のみシンプルな見出し
 	&.m-type009 {
-		background: #009688;
+		background: $color-key;
 		text-align: left;
 		color: #fff;
 	}
 
 	// 端が折り曲がった見出し
 	&.m-type010 {
-		background: #efa336;
+		background: $color-key;
 		color: #fff;
 		position: relative;
 		text-align: left;
@@ -105,6 +105,74 @@
 			position: absolute;
 			right: 0;
 			top: 0;
+		}
+	}
+
+	// 平行四辺形の見出し
+	&.m-type011 {
+		color: #fff;
+		transform: skewX(-45deg);
+		padding: 0.4em 1.2em;
+		background: $color-key;
+
+		span {
+			display: inline-block;
+			transform: skewX(45deg);
+		}
+	}
+
+	// 四角のアイコンから始まる見出し
+	&.m-type012 {
+		padding: 0.4em 0.8em 0.4em 1.8em;
+		position: relative;
+		text-align: left;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0.4em;
+			width: 1em;
+			height: 1em;
+			background: $color-key;
+		}
+	}
+
+	// 丸のアイコンから始まる見出し
+	&.m-type013 {
+		padding: 0.4em 0.8em 0.4em 1.8em;
+		position: relative;
+		text-align: left;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0.4em;
+			width: 1em;
+			height: 1em;
+			border-radius: 50%;
+			background: $color-key;
+		}
+	}
+
+	// ひし形のアイコンから始まる見出し
+	&.m-type014 {
+		padding: 0.4em 0.8em 0.4em 1.8em;
+		position: relative;
+		text-align: left;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			transform: translateY(-50%) rotate(45deg);
+			left: 0.4em;
+			width: 0.8em;
+			height: 0.8em;
+			background: $color-key;
 		}
 	}
 }
