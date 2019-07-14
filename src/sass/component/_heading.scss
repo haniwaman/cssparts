@@ -1,5 +1,6 @@
 .c-heading {
 	padding: 0.4em 0.8em;
+	font-weight: 700;
 
 	// 左のバーに破線の下線をプラスした見出し
 	&.m-type001 {
@@ -171,6 +172,24 @@
 			transform: translateY(-50%) rotate(45deg);
 			left: 0.4em;
 			width: 0.8em;
+			height: 0.8em;
+			background: $color-key;
+		}
+	}
+
+	// 短いバーから始まる見出し
+	&.m-type015 {
+		padding: 0.4em 0.8em 0.4em 1em;
+		position: relative;
+		text-align: left;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0.4em;
+			width: 0.2em;
 			height: 0.8em;
 			background: $color-key;
 		}

@@ -4,7 +4,7 @@
 	+ span {
 		display: inline-block;
 		position: relative;
-		padding: 0 0 0 1.6em;
+		padding: 0 1em 0 1.4em;
 		margin: 0;
 		cursor: pointer;
 
@@ -32,7 +32,8 @@
 			border-radius: 50%;
 			width: 1em;
 			height: 1em;
-			border: 0.2em solid #fff;
+			border: 1px solid $color-border--form--foucs;
+			box-shadow: 0 0 0 0.1em #fff inset;
 			display: block;
 			opacity: 0;
 			transition: all 0.3s ease 0s;
