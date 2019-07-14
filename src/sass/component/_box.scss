@@ -1,7 +1,7 @@
 .c-box {
 	display: inline-block;
 	background: #fff;
-	border: 2px solid $color-key;
+	border: 2px solid $color-border-box;
 	border-radius: 0;
 	padding: 0.8em;
 
@@ -10,8 +10,8 @@
 	}
 
 	> .e-title {
-		padding: 0.4em;
-		font-size: 1.2em;
+		margin-bottom: 0.4em;
+		font-size: 1.1em;
 		font-weight: 700;
 	}
 
@@ -30,7 +30,7 @@
 		&::before {
 			margin-top: -12.82px;
 			border: 12.82px solid transparent;
-			border-left: 12.82px solid $color-key;
+			border-left: 12.82px solid $color-border-box;
 			z-index: 1;
 		}
 
@@ -57,7 +57,7 @@
 		&::before {
 			margin-left: -12.82px;
 			border: 12.82px solid transparent;
-			border-bottom: 12.82px solid $color-key;
+			border-bottom: 12.82px solid $color-border-box;
 			z-index: 1;
 		}
 
@@ -84,7 +84,7 @@
 		&::before {
 			margin-top: -12.82px;
 			border: 12.82px solid transparent;
-			border-right: 12.82px solid $color-key;
+			border-right: 12.82px solid $color-border-box;
 			z-index: 1;
 		}
 
@@ -111,7 +111,7 @@
 		&::before {
 			margin-left: -12.82px;
 			border: 12.82px solid transparent;
-			border-top: 12.82px solid $color-key;
+			border-top: 12.82px solid $color-border-box;
 			z-index: 1;
 		}
 
@@ -126,7 +126,7 @@
 	// 見出しがボーダーに被るボックス
 	&.m-type1 {
 		position: relative;
-		padding-top: 1.8em;
+		padding-top: 1.35em;
 
 		> .e-title {
 			position: absolute;
@@ -135,6 +135,9 @@
 			transform: translateX(-50%);
 			background: #fff;
 			white-space: nowrap;
+			padding: 0.4em;
+			margin-bottom: 0;
+			line-height: 1;
 		}
 	}
 
@@ -142,7 +145,7 @@
 	&.m-type2 {
 
 		> .e-title {
-			background: #f44336;
+			background: $color-border-box;
 			color: #fff;
 			padding: 0.4em 0.8em;
 			margin: -0.8em -0.8em 0.8em -0.8em;

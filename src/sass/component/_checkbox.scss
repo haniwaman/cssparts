@@ -4,7 +4,7 @@
 	+ span {
 		display: inline-block;
 		position: relative;
-		padding: 0 0 0 1.6em;
+		padding: 0 1em 0 1.4em;
 		margin: 0;
 		cursor: pointer;
 
@@ -32,8 +32,8 @@
 			height: 0.6em;
 			margin-top: -0.2em;
 			display: block;
-			border-left: 3px solid $color-key;
-			border-bottom: 3px solid $color-key;
+			border-left: 3px solid $color-check;
+			border-bottom: 3px solid $color-check;
 			transition: all 0.3s ease 0s;
 			opacity: 0;
 		}

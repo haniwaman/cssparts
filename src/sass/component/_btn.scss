@@ -4,11 +4,11 @@
 	padding: 0.7em 2em;
 	margin: 0;
 	background-image: none;
-	background-color: $color-key;
+	background-color: $color-btn;
 	color: #fff;
 	text-decoration: none;
 	border: 1px solid transparent;
-	border-radius: 3px;
+	border-radius: 0;
 	font-size: 1em;
 	text-align: center;
 	-webkit-appearance: none;
@@ -30,7 +30,23 @@
 	// ゴースト
 	&.m-goast {
 		background-color: transparent;
-		border-color: #fff;
-		color: $color-text;
+		color: #fff;
+		border-color: currentColor;
+	}
+
+	&.m-arrow {
+		position: relative;
+		padding-right: 2.8em;
+
+		&::after {
+			content: "";
+			width: 1em;
+			height: 1em;
+			position: absolute;
+			right: 0.4em;
+			top: 50%;
+			transform: translateY(-50%);
+			background: transparent url(../img/arrow-right-w.png) no-repeat center center / cover;
+		}
 	}
 }

@@ -6,13 +6,29 @@ $color-accent: #e65100;
 $color-background: #fff;
 
 // テキスト色
-$color-text: #333;
-$color-text--thin: #666;
+$color-text: #212121;
+$color-text--thin: #757575;
 
 // 透過度
 $opacity: 0.6;
 
 // ボーダー
-$color-border--table: #eee;
-$color-border--form: #eee;
-$color-border--form--foucs: #ccc;
+$color-border--table: #bdbdbd;
+$color-border--form: #bdbdbd;
+$color-border--form--foucs: #9e9e9e;
+
+// .c-box
+$color-border-box: #757575;
+
+// .c-btn
+$color-btn: #757575;
+
+// .c-card
+$color-card-label: #757575;
+
+// .c-checkbox
+$color-check: #616161;
+
+// .c-drawer
+$color-drawer-bar: #757575;
+$color-drawer-text: #757575;

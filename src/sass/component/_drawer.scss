@@ -14,7 +14,7 @@
 		transition: all 0.3s ease 0s;
 	}
 
-	> .e-hamburger {
+	> .e-icon {
 		display: inline-block;
 		position: relative;
 		z-index: map-get($layer, "drawer") + 1;
@@ -33,7 +33,7 @@
 				right: 0;
 				left: 0;
 				display: block;
-				background-color: $color-key;
+				background-color: $color-drawer-bar;
 				width: 100%;
 				height: $drawer-bar-height;
 				border-radius: 2px;
@@ -53,9 +53,10 @@
 			}
 		}
 
-		> .e-text {
+		&::after {
+			content: "MENU";
 			display: block;
-			color: $color-key;
+			color: $color-drawer-text;
 			font-size: 8px;
 			text-align: center;
 			font-weight: 700;
@@ -96,7 +97,7 @@
 	// 開いている時
 	&.is-checked {
 
-		> .e-hamburger {
+		> .e-icon {
 
 			> .e-bars {
 
@@ -116,6 +117,10 @@
 						transform: rotate(45deg);
 					}
 				}
+			}
+
+			&::after {
+				content: "CLOSE";
 			}
 		}
 

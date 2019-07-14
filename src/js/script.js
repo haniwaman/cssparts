@@ -11,17 +11,9 @@ jQuery(".js-file").change(function() {
 // .c-drawer
 jQuery(".js-drawer").on("click", function(e) {
 	e.preventDefault();
-	let target = jQuery(this).attr("data-target");
-	jQuery("#" + target).toggleClass("is-checked");
-	if (jQuery("#" + target).hasClass("is-checked")) {
-		jQuery("#" + target)
-			.children(".e-text")
-			.text("CLOSE");
-	} else {
-		jQuery("#" + target)
-			.children(".e-text")
-			.text("MENU");
-	}
+	jQuery(this)
+		.parent()
+		.toggleClass("is-checked");
 	return false;
 });
 
