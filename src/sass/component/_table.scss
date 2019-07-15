@@ -1,13 +1,13 @@
 .c-table {
 	border-collapse: collapse;
 	border-spacing: 0;
-	border: 1px solid $color-border--table;
+	border: 1px solid $color-table-border;
 	width: 100%;
 	background: #fff;
 
 	th,
 	td {
-		border: 1px solid $color-border--table;
+		border: 1px solid $color-table-border;
 		padding: 0.7rem;
 	}
 
@@ -24,17 +24,17 @@
 	&.m-striped {
 
 		tr:nth-of-type(even) {
-			background: #dee2e6;
+			background: $color-table-background-active;
 		}
 	}
 
 	// 横方向の罫線のみ
-	&.m-border-horizon {
+	&.m-horizon {
 		border: none;
 
 		tr {
-			border-top: 1px solid $color-border--table;
-			border-bottom: 1px solid $color-border--table;
+			border-top: 1px solid $color-table-border;
+			border-bottom: 1px solid $color-table-border;
 
 			&:first-of-type {
 				border-top: none;
@@ -56,6 +56,7 @@
 .c-table-responsive {
 	display: block;
 	width: 100%;
+	padding: 0.2em 0;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
 }

@@ -2,6 +2,7 @@
 	width: 100%;
 	height: $header-height;
 	z-index: map-get($layer, "header");
+	background: $header;
 
 	@include mq("tab") {
 		height: $header-height-pc;
@@ -12,5 +13,6 @@
 		position: fixed;
 		top: 0;
 		left: 0;
+		background: $header-fixed;
 	}
 }

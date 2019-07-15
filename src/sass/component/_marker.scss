@@ -1,18 +1,25 @@
 .c-marker {
 	display: inline-block;
 	padding: 0 0.2em;
-	background: $color-key;
+	background: $color-marker;
 
 	&.m-thin {
-		background: linear-gradient(transparent 60%, $color-key 0);
+		background: linear-gradient(transparent 60%, $color-marker 0);
 	}
 
 	&.m-cover {
 		display: inline;
-		color: #fff;
-		background: $color-key;
+		background: $color-marker;
 		line-height: 2.2;
 		padding: 0;
-		box-shadow: $marker-pd-y 0 $color-key, 0 $marker-pd-x $color-key, $marker-pd-y $marker-pd-x $color-key, (-$marker-pd-y) 0 $color-key, 0 (-$marker-pd-x) $color-key, (-$marker-pd-y) (-$marker-pd-x) $color-key, (-$marker-pd-y) $marker-pd-x $color-key, $marker-pd-y (-$marker-pd-x) $color-key;
+		box-shadow:
+			$marker-pd-y 0 $color-marker,
+ 0 $marker-pd-x $color-marker,
+ $marker-pd-y $marker-pd-x $color-marker,
+ (-$marker-pd-y) 0 $color-marker,
+ 0 (-$marker-pd-x) $color-marker,
+ (-$marker-pd-y) (-$marker-pd-x) $color-marker,
+ (-$marker-pd-y) $marker-pd-x $color-marker,
+			$marker-pd-y (-$marker-pd-x) $color-marker;
 	}
 }

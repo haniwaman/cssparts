@@ -20,6 +20,44 @@
 		}
 	}
 
+	// 黒丸
+	&.m-disc {
+		list-style-type: disc;
+		padding-left: 2em;
+
+		li {
+
+			a {
+				display: inline;
+				padding: 0;
+			}
+
+			ul {
+				list-style-type: disc;
+				padding-left: 1.2em;
+			}
+		}
+	}
+
+	// 数字
+	&.m-decimal {
+		list-style-type: decimal;
+		padding-left: 2em;
+
+		li {
+
+			a {
+				display: inline;
+				padding: 0;
+			}
+
+			ul {
+				list-style-type: decimal;
+				padding-left: 1.2em;
+			}
+		}
+	}
+
 	// 数字で順番にカウント
 	&.m-count {
 
@@ -43,7 +81,7 @@
 					transform: translateY(-50%);
 					content: counter(number);
 					padding: 0.3em;
-					background: #f44336;
+					background: $color-list-count;
 					color: #fff;
 					font-size: 0.9em;
 				}

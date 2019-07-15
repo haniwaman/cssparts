@@ -22,10 +22,22 @@
 	}
 
 	// ウインドウ幅いっぱいに広げる
-	&.m-borderless {
+	&.m-window-full {
 		margin: 0 calc(50% - 50vw);
 		padding: 0 calc(50vw - 50%);
 		overflow: hidden;
 		width: 100vw;
+	}
+
+	&.m-window-right {
+		margin: 0 auto 0 calc(50% - 50vw);
+		overflow: hidden;
+		width: 50vw;
+	}
+
+	&.m-window-left {
+		margin: 0 calc(50% - 50vw) 0 auto;
+		overflow: hidden;
+		width: 50vw;
 	}
 }
