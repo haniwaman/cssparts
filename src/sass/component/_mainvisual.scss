@@ -16,42 +16,9 @@
 		}
 	}
 
-	.e-content {
-		position: absolute;
-		width: 100%;
-		top: 50%;
-		left: 0;
-		transform: translateY(-50%);
-		text-align: center;
-		font-weight: 700;
-		color: #fff;
-		padding: 0 $pd-x-sp;
-	}
-
-	.e-title {
-		font-size: 2em;
-	}
-
-	.e-lead {
-		font-size: 1em;
-		margin-top: 0.6em;
-	}
-
 	// 動画を背景
 	&.m-video {
 		background: none;
-
-		> .e-video {
-			position: absolute;
-			max-height: initial;
-			max-width: initial;
-			min-height: 100vh;
-			min-width: 100%;
-			top: 0;
-			left: 50%;
-			transform: translateX(-50%);
-			z-index: -1;
-		}
 	}
 
 	// ヒーローイメージ
@@ -59,4 +26,37 @@
 		min-height: initial;
 		height: 100vh;
 	}
+}
+
+.c-mainvisual__content {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	text-align: center;
+	font-weight: 700;
+	color: #fff;
+	padding: 0 $pd-x-sp;
+}
+
+.c-mainvisual__title {
+	font-size: 2em;
+}
+
+.c-mainvisual__lead {
+	font-size: 1em;
+	margin-top: 0.6em;
+}
+
+.c-mainvisual__video {
+	position: absolute;
+	max-height: initial;
+	max-width: initial;
+	min-height: 100vh;
+	min-width: 100%;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
 }

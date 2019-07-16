@@ -1,21 +1,21 @@
-.c-file-control {
-
-	.c-file-label {
-		padding: 0.4em 0.8em;
-		border: 1px solid $color-border--form;
-		cursor: pointer;
-		background: #fff;
-		color: $color-text;
-		font-weight: $font-weight--base;
-		font-size: $font-size--base;
-	}
-
-	input[type="file"] {
-		display: none;
-	}
+.c-file {
 }
 
-.c-file-result {
+.c-file__label {
+	padding: 0.4em 0.8em;
+	border: 1px solid $color-border--form;
+	cursor: pointer;
+	background: #fff;
+	color: $color-text;
+	font-weight: $font-weight--base;
+	font-size: $font-size--base;
+}
+
+.c-file__input {
+	display: none;
+}
+
+.c-file__result {
 	display: none;
 	width: 100%;
 	padding: 0.4em 0;

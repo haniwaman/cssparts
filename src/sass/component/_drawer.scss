@@ -1,137 +1,126 @@
 .c-drawer {
 	z-index: map-get($layer, "drawer");
+}
 
-	> .e-close {
-		display: none;
-		position: fixed;
-		z-index: map-get($layer, "drawer") - 1;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: #000;
-		opacity: 0;
-		transition: all 0.3s ease 0s;
+.c-drawer__close {
+	display: none;
+	position: fixed;
+	z-index: map-get($layer, "drawer") - 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+
+	.is-checked & {
+		display: block;
+		opacity: 0.4;
+	}
+}
+
+.c-drawer__icon {
+	display: inline-block;
+	position: relative;
+	z-index: map-get($layer, "drawer") + 1;
+	text-align: center;
+	cursor: pointer;
+
+	&::after {
+		content: "MENU";
+		display: block;
+		color: $color-drawer-text;
+		font-size: 8px;
+		text-align: center;
+		font-weight: 700;
+		line-height: 1;
+		margin-top: 8px;
 	}
 
-	> .e-icon {
-		display: inline-block;
-		position: relative;
-		z-index: map-get($layer, "drawer") + 1;
-		text-align: center;
-		cursor: pointer;
-
-		> .e-bars {
-			display: inline-block;
-			width: $drawer-bar-width;
-			height: $drawer-bar-height + ($drawer-bar-space + $drawer-bar-height) * 2;
-			position: relative;
-			vertical-align: bottom;
-
-			> .e-bar {
-				position: absolute;
-				right: 0;
-				left: 0;
-				display: block;
-				background-color: $color-drawer-bar;
-				width: 100%;
-				height: $drawer-bar-height;
-				border-radius: 2px;
-				transition: all 0.3s ease 0s;
-
-				&:nth-of-type(1) {
-					top: 0;
-				}
-
-				&:nth-of-type(2) {
-					top: $drawer-bar-space + $drawer-bar-height;
-				}
-
-				&:nth-of-type(3) {
-					top: ($drawer-bar-space + $drawer-bar-height) * 2;
-				}
-			}
-		}
+	.is-checked & {
 
 		&::after {
-			content: "MENU";
-			display: block;
-			color: $color-drawer-text;
-			font-size: 8px;
-			text-align: center;
-			font-weight: 700;
-			line-height: 1;
-			margin-top: 8px;
+			content: "CLOSE";
 		}
 	}
+}
 
-	> .e-content {
-		overflow: auto;
-		position: fixed;
+.c-drawer__bars {
+	display: inline-block;
+	width: $drawer-bar-width;
+	height: $drawer-bar-height + ($drawer-bar-space + $drawer-bar-height) * 2;
+	position: relative;
+	vertical-align: bottom;
+}
+
+.c-drawer__bar {
+	position: absolute;
+	right: 0;
+	left: 0;
+	display: block;
+	background-color: $color-drawer-bar;
+	width: 100%;
+	height: $drawer-bar-height;
+	border-radius: 2px;
+	transition: all 0.3s ease 0s;
+
+	&:nth-of-type(1) {
 		top: 0;
-		right: 0;
-		bottom: auto;
-		left: auto;
-		transform: translateX(105%);
-		z-index: map-get($layer, "drawer");
-		width: 200px;
-		max-width: 90%;
-		height: 100%;
-		background: #fff;
-		transition: all 0.5s ease 0s;
-		padding-top: $header-height;
-		text-align: left;
-		color: $color-text;
 	}
 
-	// 左から表示
-	&.m-left {
-
-		> .e-content {
-			transform: translateX(-105%);
-			left: 0;
-			right: auto;
-		}
+	&:nth-of-type(2) {
+		top: $drawer-bar-space + $drawer-bar-height;
 	}
 
-	// 開いている時
-	&.is-checked {
+	&:nth-of-type(3) {
+		top: ($drawer-bar-space + $drawer-bar-height) * 2;
+	}
 
-		> .e-icon {
+	.is-checked & {
 
-			> .e-bars {
-
-				> .e-bar {
-
-					&:nth-of-type(1) {
-						top: 10px;
-						transform: rotate(-45deg);
-					}
-
-					&:nth-of-type(2) {
-						background-color: transparent;
-					}
-
-					&:nth-of-type(3) {
-						top: 10px;
-						transform: rotate(45deg);
-					}
-				}
-			}
-
-			&::after {
-				content: "CLOSE";
-			}
+		&:nth-of-type(1) {
+			top: 10px;
+			transform: rotate(-45deg);
 		}
 
-		> .e-close {
-			display: block;
-			opacity: 0.4;
+		&:nth-of-type(2) {
+			background-color: transparent;
 		}
 
-		> .e-content {
-			transform: translateX(0);
-			box-shadow: 6px 0 25px rgba(#000, 0.16);
+		&:nth-of-type(3) {
+			top: 10px;
+			transform: rotate(45deg);
 		}
+	}
+}
+
+.c-drawer__content {
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: auto;
+	left: auto;
+	transform: translateX(105%);
+	z-index: map-get($layer, "drawer");
+	width: 200px;
+	max-width: 90%;
+	height: 100%;
+	background: #fff;
+	transition: all 0.5s ease 0s;
+	padding-top: $header-height;
+	text-align: left;
+	color: $color-text;
+
+	.m-left & {
+		transform: translateX(-105%);
+		left: 0;
+		right: auto;
+	}
+
+	.is-checked & {
+		transform: translateX(0);
+		box-shadow: 6px 0 25px rgba(#000, 0.16);
 	}
 }

@@ -11,21 +11,21 @@
 	opacity: 0;
 	transition: all 0.3s ease 0s;
 
-	> .e-close {
-		position: absolute;
-		display: inline-block;
-		z-index: map-get($layer, "modal") + 1;
-		bottom: 16px;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-	> .e-content {
-		background: #fff;
-	}
-
 	&.is-checked {
 		opacity: 1;
 		visibility: visible;
 	}
+}
+
+.c-modal__close {
+	position: absolute;
+	display: inline-block;
+	z-index: map-get($layer, "modal") + 1;
+	bottom: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.c-modal__content {
+	background: #fff;
 }

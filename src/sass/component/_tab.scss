@@ -1,28 +1,37 @@
 .c-tab {
+}
 
-	.e-nav {
-		display: flex;
-		justify-content: center;
-		border-bottom: 2px solid $color-tab-border;
+.c-tab__nav {
+	display: flex;
+	justify-content: center;
+	border-bottom: 2px solid $color-tab-border;
+}
 
-		.e-item {
-			display: block;
-			padding: 0.8em 1.6em;
-			background: $color-tab-background;
-			margin-bottom: -2px;
+.c-tab__item {
+	display: block;
+	padding: 0.8em 1.6em;
+	background: $color-tab-background;
+	margin-bottom: -2px;
+	transition: all 0.3s ease 0s;
 
-			&.is-checked {
-				background: $color-tab-background-active;
-				color: #fff;
-			}
-		}
+	&.is-checked {
+		background: $color-tab-background-active;
+		color: #fff;
 	}
 
-	.e-content {
-		display: none;
+	@include mq("tab") {
 
-		&.is-checked {
-			display: block;
+		&:hover {
+			background: $color-tab-background-active;
+			color: #fff;
 		}
+	}
+}
+
+.c-tab__content {
+	display: none;
+
+	&.is-checked {
+		display: block;
 	}
 }

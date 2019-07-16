@@ -1,10 +1,10 @@
-// .c-file-control
+// .c-file
 jQuery(".js-file").change(function() {
 	jQuery(this)
-		.siblings(".c-file-result")
+		.siblings(".c-file__result")
 		.show();
 	jQuery(this)
-		.siblings(".c-file-result")
+		.siblings(".c-file__result")
 		.text(jQuery(this).val());
 });
 
@@ -41,14 +41,14 @@ jQuery(".js-accordion").on("click", function(e) {
 jQuery(".js-tab").on("click", function(e) {
 	e.preventDefault();
 	jQuery(this)
-		.parent(".e-nav")
-		.children(".e-item")
+		.parent()
+		.children()
 		.removeClass("is-checked");
 	jQuery(this).addClass("is-checked");
 	let target = jQuery(this).attr("data-target");
 	jQuery("#" + target)
-		.parent(".e-contents")
-		.children(".e-content")
+		.parent()
+		.children()
 		.removeClass("is-checked");
 	jQuery("#" + target).addClass("is-checked");
 	return false;

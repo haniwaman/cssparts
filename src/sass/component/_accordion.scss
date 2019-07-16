@@ -1,42 +1,36 @@
 .c-accordion {
+}
 
-	> .e-title {
-		padding: 0.4em 0.8em;
-		cursor: pointer;
-	}
+.c-accordion__title {
+	padding: 0.4em 0.8em;
+	cursor: pointer;
 
-	> .e-content {
-		display: none;
-		padding: 0.4em 0.8em;
-	}
+	.m-arrow & {
+		position: relative;
+		padding-right: 2.4em;
 
-	&.m-arrow {
-
-		> .e-title {
-			position: relative;
-			padding-right: 2.4em;
-
-			&::after {
-				content: "";
-				position: absolute;
-				top: 50%;
-				right: 0.4em;
-				transform: translateY(-50%);
-				width: 0.8em;
-				height: 0.8em;
-				background: transparent url(../img/arrow-bottom.png) no-repeat top center / cover;
-				transition: all 0.5s ease 0s;
-			}
-		}
-
-		&.is-checked {
-
-			> .e-title {
-
-				&::after {
-					transform: translateY(-50%) rotateX(180deg);
-				}
-			}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 0.4em;
+			transform: translateY(-50%);
+			width: 0.8em;
+			height: 0.8em;
+			background: transparent url(../img/arrow-bottom.png) no-repeat top center / cover;
+			transition: all 0.5s ease 0s;
 		}
 	}
+
+	.is-checked & {
+
+		&::after {
+			transform: translateY(-50%) rotateX(180deg);
+		}
+	}
+}
+
+.c-accordion__content {
+	display: none;
+	padding: 0.4em 0.8em;
 }
