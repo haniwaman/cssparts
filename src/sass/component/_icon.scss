@@ -25,7 +25,7 @@
 		height: 84%;
 		margin: -42% 0 0 -42%;
 		border-radius: 50%;
-		border: 0.16em solid $color-key;
+		border: 0.16em solid $color-icon-circle;
 	}
 }
 
@@ -50,7 +50,7 @@
 			width: 84%;
 			height: 16%;
 			margin: -8% 0 0 -42%;
-			background: $color-key;
+			background: $color-icon-cross;
 		}
 
 		&::before {
@@ -79,7 +79,7 @@
 		width: 84%;
 		height: 16%;
 		margin: -8% 0 0 -42%;
-		background: $color-key;
+		background: $color-icon-hamburger;
 
 		&::before,
 		&::after {
@@ -91,7 +91,7 @@
 			width: 100%;
 			height: 100%;
 			margin: -8% 0 0 -50%;
-			background: $color-key;
+			background: $color-icon-hamburger;
 		}
 
 		&::before {
@@ -121,8 +121,8 @@
 		width: 84%;
 		height: 36%;
 		margin: -18% 0 0 -42%;
-		border-left: 0.16em solid $color-key;
-		border-bottom: 0.16em solid $color-key;
+		border-left: 0.16em solid $color-icon-check;
+		border-bottom: 0.16em solid $color-icon-check;
 		transform: rotate(-45deg);
 	}
 }
@@ -144,8 +144,8 @@
 		width: 56%;
 		height: 56%;
 		margin: -28% 0 0 -36%;
-		border-right: 0.16em solid $color-key;
-		border-bottom: 0.16em solid $color-key;
+		border-right: 0.16em solid $color-icon-arrow-right;
+		border-bottom: 0.16em solid $color-icon-arrow-right;
 		transform: rotate(-45deg);
 	}
 }
@@ -167,8 +167,8 @@
 		width: 56%;
 		height: 56%;
 		margin: -36% 0 0 -28%;
-		border-left: 0.16em solid $color-key;
-		border-bottom: 0.16em solid $color-key;
+		border-left: 0.16em solid $color-icon-arrow-bottom;
+		border-bottom: 0.16em solid $color-icon-arrow-bottom;
 		transform: rotate(-45deg);
 	}
 }
@@ -190,8 +190,8 @@
 		width: 56%;
 		height: 56%;
 		margin: -28% 0 0 -14%;
-		border-left: 0.16em solid $color-key;
-		border-top: 0.16em solid $color-key;
+		border-left: 0.16em solid $color-icon-arrow-left;
+		border-top: 0.16em solid $color-icon-arrow-left;
 		transform: rotate(-45deg);
 	}
 }
@@ -213,8 +213,8 @@
 		width: 56%;
 		height: 56%;
 		margin: -14% 0 0 -28%;
-		border-top: 0.16em solid $color-key;
-		border-right: 0.16em solid $color-key;
+		border-top: 0.16em solid $color-icon-arrow-top;
+		border-right: 0.16em solid $color-icon-arrow-top;
 		transform: rotate(-45deg);
 	}
 }
@@ -238,7 +238,7 @@
 		margin: -42% 0 0 -42%;
 		border-style: solid;
 		border-width: 0 0.42em 0.728em 0.42em;
-		border-color: transparent transparent $color-key transparent;
+		border-color: transparent transparent $color-icon-triangle transparent;
 	}
 }
 
@@ -259,7 +259,7 @@
 		width: 56%;
 		height: 56%;
 		margin: -28% 0 0 -28%;
-		background: $color-key;
+		background: $color-icon-rhombus;
 		transform: rotate(-45deg);
 	}
 }
@@ -282,7 +282,7 @@
 		height: 56%;
 		border-radius: 50%;
 		margin: -0.28em 0 0 -0.28em;
-		border: 0.12em solid $color-key;
+		border: 0.12em solid $color-icon-glass;
 
 		&::after {
 			position: absolute;
@@ -292,7 +292,7 @@
 			left: 50%;
 			width: 72%;
 			height: 36%;
-			background: $color-key;
+			background: $color-icon-glass;
 			margin: 0.2em 0 0 0.14em;
 			transform: rotate(45deg);
 		}

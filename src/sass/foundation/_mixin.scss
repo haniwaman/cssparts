@@ -11,3 +11,14 @@
 
 	@return $numerator / $denominator;
 }
+
+// 背景色の明度によって文字色を変える
+@function color-from-background($background-color) {
+	$color: #212121;
+
+	@if lightness($background-color) < 70% {
+		$color: #fff;
+	}
+
+	@return $color;
+}

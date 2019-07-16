@@ -8,16 +8,36 @@
 		height: $header-height-pc;
 	}
 
-	// 透明
-	&.m-transparent {
-		background: transparent;
-	}
-
 	// 固定
 	&.m-fixed {
 		position: fixed;
 		top: 0;
 		left: 0;
 		background: $header-fixed;
+	}
+
+	// スクロール
+	&.m-scroll-down {
+		position: fixed;
+		top: 0;
+		left: 0;
+		transform: translateY(-$header-height);
+		transition: all 0.3s ease 0s;
+
+		&.is-scroll {
+			transform: translateY(0);
+		}
+	}
+
+	&.m-scroll-white {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: transparent;
+		transition: all 0.3s ease 0s;
+
+		&.is-scroll {
+			background: #fff;
+		}
 	}
 }

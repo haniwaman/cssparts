@@ -1,0 +1,62 @@
+.u-scale {
+	transition: all 0.5s ease 0s;
+	transform: scale(1, 1);
+
+	&:hover {
+		transform: scale(1.2, 1.2);
+	}
+}
+
+.u-opacity {
+	transition: all 0.5s ease 0s;
+	opacity: 1;
+
+	&:hover {
+		opacity: $opacity;
+	}
+}
+
+.u-up {
+	transition: all 0.5s ease 0s;
+	transform: translate(0, 0);
+
+	&:hover {
+		transform: translate(0, -0.3em);
+	}
+}
+
+.u-down {
+	transition: all 0.5s ease 0s;
+	transform: translate(0, 0);
+
+	&:hover {
+		transform: translate(0, 0.3em);
+	}
+}
+
+.u-rotate-x {
+	transition: all 0.5s ease 0s;
+	transform: rotateX(0);
+
+	&:hover {
+		transform: rotateX(360deg);
+	}
+}
+
+.u-rotate-y {
+	transition: all 0.5s ease 0s;
+	transform: rotateY(0);
+
+	&:hover {
+		transform: rotateY(360deg);
+	}
+}
+
+.u-rotate-z {
+	transition: all 0.5s ease 0s;
+	transform: rotate(0);
+
+	&:hover {
+		transform: rotateZ(360deg);
+	}
+}

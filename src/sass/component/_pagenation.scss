@@ -1,0 +1,38 @@
+.c-pagenation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	> .e-num {
+		background: $color-pagenation-background;
+		border: 1px solid $color-pagenation-background;
+		color: $color-text;
+		height: 42px;
+		display: inline-block;
+		line-height: 42px;
+		margin-right: 8px;
+		min-width: 42px;
+		text-align: center;
+		text-decoration: none;
+		transition: all 0.3s ease 0s;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&.m-current {
+			background: $color-pagenation-background-current;
+			border: 1px solid $color-pagenation-background-current;
+			color: #fff;
+		}
+
+		@include mq("tab") {
+
+			&:hover {
+				background: $color-pagenation-background-current;
+				border: 1px solid $color-pagenation-background-current;
+				color: #fff;
+			}
+		}
+	}
+}

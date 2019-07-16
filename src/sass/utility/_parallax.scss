@@ -1,0 +1,19 @@
+.u-fadein {
+	transition: all 0.8s ease 0s;
+	opacity: 0;
+
+	&.is-anim {
+		opacity: 1;
+	}
+}
+
+.u-fadein-up {
+	transition: all 0.8s ease 0s;
+	transform: translate(0, 0.8rem);
+	opacity: 0;
+
+	&.is-anim {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}

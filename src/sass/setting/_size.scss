@@ -2,7 +2,7 @@
 $layout-width-canvas: 1440px;
 $layout-width-container: 980px;
 
-// ブレークポイント
+// ブレークポイント（PCベース）
 // $breakpoints: (
 // 	"sp": "screen and (max-width: 767px)",
 // 	"tab+sp": "screen and (min-width: 768px) and (max-width: #{$layout-width-container - 1px})",
@@ -11,6 +11,7 @@ $layout-width-container: 980px;
 // 	"ie": "screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)"
 // );
 
+// ブレークポイント（スマホベース）
 $breakpoints: (
 	"sp": "(max-width: 767px)",
 	"tab-only": "(min-width: 768px) and (max-width: #{$layout-width-container - 1px})",
