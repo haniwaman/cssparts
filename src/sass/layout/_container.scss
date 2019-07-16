@@ -13,4 +13,16 @@
 		padding-right: $pd-x-pc;
 		padding-left: $pd-x-pc;
 	}
+
+	&.m-wide {
+		width: $layout-width-container * 1.1;
+	}
+
+	&.m-narrow {
+		width: $layout-width-container * 0.9;
+	}
+
+	&.m-full {
+		width: 100%;
+	}
 }
