@@ -8,6 +8,11 @@
 		height: $header-height-pc;
 	}
 
+	// 透明
+	&.m-transparent {
+		background: transparent;
+	}
+
 	// 固定
 	&.m-fixed {
 		position: fixed;
