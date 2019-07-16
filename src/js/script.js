@@ -124,3 +124,8 @@ var swiper = new Swiper(".swiper-container", {
 	initialSlide: 0,
 	effect: "slide" // fade
 });
+
+// Lightbox
+lightbox.option({
+	wrapAround: true
+});
