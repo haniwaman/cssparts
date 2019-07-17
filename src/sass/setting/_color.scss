@@ -69,6 +69,10 @@ $color-table-background-active: #e0e0e0;
 $color-pagenation-background: #eee;
 $color-pagenation-background-current: #212121;
 
+// .c-modal
+$color-modal-background: #fff;
+$color-modal-background-full: rgba($color-key, 0.78);
+
 // .c-icon
 $color-icon-circle: #757575;
 $color-icon-cross: #757575;
@@ -81,6 +85,7 @@ $color-icon-arrow-top: #757575;
 $color-icon-triangle: #757575;
 $color-icon-rhombus: #757575;
 $color-icon-glass: #757575;
+$color-icon-square: #757575;
 
 // swiper
 $color-swiper-arrow: #e0e0e0;

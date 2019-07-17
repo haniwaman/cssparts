@@ -1,4 +1,4 @@
-// .c-file
+// .js-file
 jQuery(".js-file").change(function() {
 	jQuery(this)
 		.siblings(".c-file__result")
@@ -8,7 +8,7 @@ jQuery(".js-file").change(function() {
 		.text(jQuery(this).val());
 });
 
-// .c-drawer
+// .js-drawer
 jQuery(".js-drawer").on("click", function(e) {
 	e.preventDefault();
 	jQuery(this)
@@ -17,7 +17,7 @@ jQuery(".js-drawer").on("click", function(e) {
 	return false;
 });
 
-// .c-modal
+// .js-modal
 jQuery(".js-modal").on("click", function(e) {
 	e.preventDefault();
 	let target = jQuery(this).attr("data-target");
@@ -25,7 +25,7 @@ jQuery(".js-modal").on("click", function(e) {
 	return false;
 });
 
-// .c-accordion
+// .js-accordion
 jQuery(".js-accordion").on("click", function(e) {
 	e.preventDefault();
 	jQuery(this)
@@ -37,7 +37,7 @@ jQuery(".js-accordion").on("click", function(e) {
 	return false;
 });
 
-// .c-tab
+// .js-tab
 jQuery(".js-tab").on("click", function(e) {
 	e.preventDefault();
 	jQuery(this)
@@ -128,4 +128,14 @@ var swiper = new Swiper(".swiper-container", {
 // Lightbox
 lightbox.option({
 	wrapAround: true
+});
+
+// js-floating"
+jQuery(".js-floating").hide();
+jQuery(window).on("scroll", function() {
+	if (100 < jQuery(this).scrollTop()) {
+		jQuery(".js-floating").show();
+	} else {
+		jQuery(".js-floating").hide();
+	}
 });

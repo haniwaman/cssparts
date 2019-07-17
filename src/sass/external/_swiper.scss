@@ -18,8 +18,8 @@
 		border-left: 0.16em solid $color-swiper-arrow;
 		border-top: 0.16em solid $color-swiper-arrow;
 		transform: rotate(-45deg);
-		left: 0;
-		top: 0;
+		left: 50%;
+		top: 50%;
 	}
 }
 
@@ -37,8 +37,6 @@
 		border-right: 0.16em solid $color-swiper-arrow;
 		border-bottom: 0.16em solid $color-swiper-arrow;
 		transform: rotate(-45deg);
-		left: 0;
-		top: 0;
 	}
 }
 

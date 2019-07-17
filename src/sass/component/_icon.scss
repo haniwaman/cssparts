@@ -298,3 +298,24 @@
 		}
 	}
 }
+
+// 四角
+.c-icon-square {
+	display: inline-block;
+	width: $icon-widht;
+	height: $icon-height;
+	font-size: $icon-font;
+	position: relative;
+	overflow: hidden;
+
+	> span {
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		width: 84%;
+		height: 84%;
+		margin: -42% 0 0 -42%;
+		background: $color-icon-square;
+	}
+}
