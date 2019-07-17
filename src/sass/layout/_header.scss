@@ -2,7 +2,7 @@
 	width: 100%;
 	height: $header-height;
 	z-index: map-get($layer, "header");
-	background: $header;
+	background: $header-background;
 
 	@include mq("tab") {
 		height: $header-height-pc;
@@ -13,7 +13,19 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		background: $header-fixed;
+		background: $header-background-fixed;
+	}
+
+	&.m-scroll-background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: transparent;
+		transition: all 0.3s ease 0s;
+
+		&.is-scroll {
+			background: $header-background-scroll;
+		}
 	}
 
 	// スクロール
@@ -23,21 +35,10 @@
 		left: 0;
 		transform: translateY(-$header-height);
 		transition: all 0.3s ease 0s;
+		background: $header-background-scroll;
 
-		&.is-scroll {
+		[data-scroll="true"] & {
 			transform: translateY(0);
-		}
-	}
-
-	&.m-scroll-white {
-		position: fixed;
-		top: 0;
-		left: 0;
-		background: transparent;
-		transition: all 0.3s ease 0s;
-
-		&.is-scroll {
-			background: #fff;
 		}
 	}
 }

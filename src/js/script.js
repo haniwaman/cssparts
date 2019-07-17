@@ -1,3 +1,17 @@
+// スクロール判定
+jQuery(window).on("scroll", function() {
+	if (100 < jQuery(this).scrollTop()) {
+		jQuery("body").attr("data-scroll", "true");
+	} else {
+		jQuery("body").attr("data-scroll", "false");
+	}
+});
+
+// ローディング判定
+jQuery(window).on("load", function() {
+	jQuery("body").attr("data-loading", "true");
+});
+
 // .js-file
 jQuery(".js-file").change(function() {
 	jQuery(this)
@@ -54,7 +68,7 @@ jQuery(".js-tab").on("click", function(e) {
 	return false;
 });
 
-// SmoothScroll
+// スムーススクロール
 jQuery('a[href^="#"]').click(function() {
 	let header = jQuery(".l-header").height();
 	let speed = 300;
@@ -76,15 +90,6 @@ jQuery('a[href^="#"]').click(function() {
 	return false;
 });
 
-// スクロールしたら処理
-jQuery(window).on("scroll", function() {
-	if (100 < jQuery(this).scrollTop()) {
-		jQuery(".l-header").addClass("is-scroll");
-	} else {
-		jQuery(".l-header").removeClass("is-scroll");
-	}
-});
-
 // パララックス
 jQuery(window).on("load scroll", function() {
 	var elemAnim = jQuery(".js-anim");
@@ -103,6 +108,7 @@ jQuery(window).on("load scroll", function() {
 });
 
 // Swiper
+// https://idangero.us/swiper/
 var swiper = new Swiper(".swiper-container", {
 	navigation: {
 		nextEl: ".swiper-button-next",
@@ -126,16 +132,7 @@ var swiper = new Swiper(".swiper-container", {
 });
 
 // Lightbox
+// https://lokeshdhakar.com/projects/lightbox2/
 lightbox.option({
 	wrapAround: true
-});
-
-// js-floating"
-jQuery(".js-floating").hide();
-jQuery(window).on("scroll", function() {
-	if (100 < jQuery(this).scrollTop()) {
-		jQuery(".js-floating").show();
-	} else {
-		jQuery(".js-floating").hide();
-	}
 });

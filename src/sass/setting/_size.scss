@@ -26,6 +26,7 @@ $header-height-pc: 80px;
 
 // z-index の指定
 $layer: (
+	loading: 200,
 	modal: 100,
 	drawer: 40,
 	floating: 30,
