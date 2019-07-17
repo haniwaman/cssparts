@@ -1,0 +1,22 @@
+.c-loading {
+	background: #fff;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	visibility: visible;
+	top: 0;
+	left: 0;
+	z-index: map-get($layer, "loading");
+	transition: all 0.3s ease 0s;
+
+	[data-loading="true"] & {
+		visibility: hidden;
+	}
+}
+
+.c-loading__content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
