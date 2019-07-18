@@ -24,7 +24,7 @@
 		top: 0;
 		left: 0;
 		background: transparent;
-		transition: all 0.3s ease 0s;
+		transition: background 0.3s ease 0s;
 
 		[data-scroll="true"] & {
 			background: $header-background-scroll;
@@ -38,7 +38,7 @@
 		top: 0;
 		left: 0;
 		transform: translateY(-$header-height);
-		transition: all 0.3s ease 0s;
+		transition: transform 0.3s ease 0s;
 		background: $header-background-scroll;
 		color: color-from-background($header-background-scroll);
 

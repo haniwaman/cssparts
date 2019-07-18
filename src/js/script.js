@@ -32,6 +32,15 @@ jQuery(function() {
 		return false;
 	});
 
+	jQuery(".js-drawer-close a").on("click", function(e) {
+		e.preventDefault();
+		jQuery(this)
+			.parents(".js-drawer-close")
+			.parent()
+			.toggleClass("is-checked");
+		return false;
+	});
+
 	// .js-modal
 	jQuery(".js-modal").on("click", function(e) {
 		e.preventDefault();
@@ -93,14 +102,14 @@ jQuery(function() {
 
 	// パララックス
 	jQuery(window).on("load scroll", function() {
-		var elemAnim = jQuery(".js-anim");
-		var isAnimate = "is-anim";
+		let jsAnim = jQuery(".js-anim");
+		let isAnimate = "is-anim";
 
-		elemAnim.each(function() {
-			var winScroll = jQuery(window).scrollTop();
-			var winHeight = jQuery(window).height();
-			var scrollPos = winScroll + winHeight;
-			var buffer = 100; // 表示領域に入ってからクラス付与までの距離
+		jsAnim.each(function() {
+			let winScroll = jQuery(window).scrollTop();
+			let winHeight = jQuery(window).height();
+			let scrollPos = winScroll + winHeight;
+			let buffer = 100; // 表示領域に入ってからクラス付与までの距離
 
 			if (jQuery(this).offset().top < scrollPos - buffer) {
 				jQuery(this).addClass(isAnimate);
@@ -110,7 +119,7 @@ jQuery(function() {
 
 	// Swiper
 	// https://idangero.us/swiper/
-	var swiper = new Swiper(".swiper-container", {
+	let swiper = new Swiper(".swiper-container", {
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev"
@@ -139,7 +148,7 @@ jQuery(function() {
 	});
 
 	// 電話番号
-	var ua = navigator.userAgent;
+	let ua = navigator.userAgent;
 	if (ua.indexOf("iPhone") < 0 && ua.indexOf("Android") < 0) {
 		jQuery('a[href^="tel:"]')
 			.css("cursor", "default")

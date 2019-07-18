@@ -5,7 +5,7 @@
 	margin: 0;
 	background-image: none;
 	background-color: $color-btn;
-	color: #fff;
+	color: color-from-background($color-btn);
 	text-decoration: none;
 	border: 1px solid transparent;
 	border-radius: 0;
@@ -32,6 +32,11 @@
 		background-color: transparent;
 		color: #fff;
 		border-color: currentColor;
+	}
+
+	// 影
+	&.m-shadow {
+		box-shadow: 0 0 3px 0 rgba(#000, 0.16);
 	}
 
 	&.m-arrow {
