@@ -195,7 +195,7 @@
 		}
 	}
 
-	// 線に挟まれた見出し
+	// 長い線に挟まれた見出し
 	&.m-type016 {
 		position: relative;
 		text-align: center;
@@ -217,6 +217,43 @@
 			height: 1px;
 			background: $color-heading-background;
 			z-index: 1;
+		}
+	}
+
+	// 短い線に挟まれた見出し
+	&.m-type017 {
+		position: relative;
+		text-align: center;
+
+		span {
+			position: relative;
+			z-index: 2;
+			padding: 0.2em 0.6em;
+			background: #fff;
+
+			&::before {
+				position: absolute;
+				content: "";
+				top: 50%;
+				transform: translateY(-50%);
+				right: 100%;
+				width: 1.6rem;
+				height: 1px;
+				background: $color-heading-background;
+				z-index: 1;
+			}
+
+			&::after {
+				position: absolute;
+				content: "";
+				top: 50%;
+				transform: translateY(-50%);
+				left: 100%;
+				width: 1.6rem;
+				height: 1px;
+				background: $color-heading-background;
+				z-index: 1;
+			}
 		}
 	}
 }

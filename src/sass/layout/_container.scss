@@ -3,6 +3,7 @@
 	padding: 0 $pd-x-sp;
 	width: $layout-width-container;
 	max-width: 100%;
+	height: inherit;
 
 	@include mq("tab") {
 		padding-right: $pd-x-tab;

@@ -1,6 +1,7 @@
 .c-row {
 	display: flex;
 	flex-wrap: wrap;
+	height: inherit;
 
 	// 上下中央
 	&.m-middle {
@@ -16,19 +17,15 @@
 	&.m-reverse {
 		flex-direction: row-reverse;
 	}
-
-	// 余白
-	&.m-padding {
-
-		> .c-row__col {
-			padding: 0.8em;
-		}
-	}
 }
 
 // flexアイテム
 .c-row__col {
 	padding: 0;
+
+	.m-padding & {
+		padding: 0.8em;
+	}
 }
 
 .c-row__col01 {

@@ -1,4 +1,6 @@
 .l-footer {
 	width: 100%;
 	z-index: map-get($layer, "footer");
+	background: $footer-background;
+	color: color-from-background($footer-background);
 }

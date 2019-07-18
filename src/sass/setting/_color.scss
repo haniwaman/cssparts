@@ -1,26 +1,26 @@
 // ベース色
 $color-key: #efa336;
 $color-accent: #e65100;
-$color-black: #212121;
+$color-black: #424242;
 $color-gray: #eee;
 
 // 背景
 $color-background: #fff;
 
 // テキスト色
-$color-text: #212121;
+$color-text: #424242;
 $color-text--thin: #757575;
 
 // 透過度
 $opacity: 0.6;
 
 // ヘッダー
-$header-background: transparent;
+$header-background: rgba(#fff, 0);
 $header-background-fixed: #fff;
 $header-background-scroll: #fff;
 
 // フッター
-$footer: #666;
+$footer-background: #666;
 
 // ボーダー
 $color-border--form: #bdbdbd;

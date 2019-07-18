@@ -26,6 +26,11 @@
 		min-height: initial;
 		height: 100vh;
 	}
+
+	// ヒーローイメージ
+	&.m-high {
+		height: 700px;
+	}
 }
 
 .c-mainvisual__content {
