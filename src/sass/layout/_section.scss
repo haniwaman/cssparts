@@ -1,4 +1,9 @@
 .l-section {
 	width: 100%;
 	padding: 2.8rem 0;
+
+	&.m-sticky {
+		position: sticky;
+		top: 0;
+	}
 }

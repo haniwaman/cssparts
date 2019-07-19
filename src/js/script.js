@@ -156,4 +156,9 @@ jQuery(function() {
 				e.preventDefault();
 			});
 	}
+
+	// StickyのIE11対応
+	// https://blog.hiroyuki90.com/demo/position-sticky/stickyfill.min.js
+	let elem = document.querySelectorAll(".m-sticky");
+	Stickyfill.add(elem);
 });
