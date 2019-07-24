@@ -101,20 +101,20 @@ jQuery(function() {
 	});
 
 	// パララックス
-	jQuery(window).on("load scroll", function() {
-		let jsAnim = jQuery(".js-anim");
-		let isAnimate = "is-anim";
-
-		jsAnim.each(function() {
-			let winScroll = jQuery(window).scrollTop();
-			let winHeight = jQuery(window).height();
-			let scrollPos = winScroll + winHeight;
-			let buffer = 100; // 表示領域に入ってからクラス付与までの距離
-
-			if (jQuery(this).offset().top < scrollPos - buffer) {
-				jQuery(this).addClass(isAnimate);
+	const parallaxOptions = { root: null, rootMargin: "0px", threshold: [0.25] };
+	var parallaxItems = [].slice.call(document.querySelectorAll(".js-anim"));
+	let parallaxItemObserver = new IntersectionObserver(function(entries, observer) {
+		entries.forEach(function(entry) {
+			if (entry.isIntersecting) {
+				let parallaxItem = entry.target;
+				parallaxItem.classList.add("is-anim");
+				parallaxItemObserver.unobserve(parallaxItem);
 			}
 		});
+	}, parallaxOptions);
+
+	parallaxItems.forEach(function(parallaxItem) {
+		parallaxItemObserver.observe(parallaxItem);
 	});
 
 	// Swiper
@@ -148,8 +148,8 @@ jQuery(function() {
 	});
 
 	// 電話番号
-	let ua = navigator.userAgent;
-	if (ua.indexOf("iPhone") < 0 && ua.indexOf("Android") < 0) {
+	let userAgent = navigator.userAgent;
+	if (userAgent.indexOf("iPhone") < 0 && userAgent.indexOf("Android") < 0) {
 		jQuery('a[href^="tel:"]')
 			.css("cursor", "default")
 			.on("click", function(e) {
@@ -159,6 +159,35 @@ jQuery(function() {
 
 	// StickyのIE11対応
 	// https://blog.hiroyuki90.com/demo/position-sticky/stickyfill.min.js
-	let elem = document.querySelectorAll(".m-sticky");
-	Stickyfill.add(elem);
+	let sticky = document.querySelectorAll(".m-sticky");
+	Stickyfill.add(sticky);
+
+	// LazyLoad
+	// https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/
+	const lazyOptions = { root: null, rootMargin: "0px", threshold: [0] };
+	var lazyItems = [].slice.call(document.querySelectorAll(".js-lazy"));
+	lazyItems.forEach(function(lazyItem) {
+		lazyItem.setAttribute("data-src", lazyItem.src);
+		lazyItem.src = "";
+	});
+	let lazyItemObserver = new IntersectionObserver(function(entries, observer) {
+		entries.forEach(function(entry) {
+			if (entry.isIntersecting) {
+				let lazyItem = entry.target;
+				console.log(lazyItem);
+				if (lazyItem.dataset.hasOwnProperty("src")) {
+					lazyItem.src = lazyItem.dataset.src;
+				}
+				if (lazyItem.dataset.hasOwnProperty("srcset")) {
+					lazyItem.srcset = lazyItem.dataset.srcset;
+				}
+				lazyItem.classList.remove("js-lazy");
+				lazyItemObserver.unobserve(lazyItem);
+			}
+		});
+	}, lazyOptions);
+
+	lazyItems.forEach(function(lazyItem) {
+		lazyItemObserver.observe(lazyItem);
+	});
 });
