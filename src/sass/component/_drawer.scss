@@ -63,7 +63,7 @@
 	width: 100%;
 	height: $drawer-bar-height;
 	border-radius: 2px;
-	transition: all 0.3s ease 0s;
+	transition: all 0.3s linear 0s;
 
 	&:nth-of-type(1) {
 		top: 0;
