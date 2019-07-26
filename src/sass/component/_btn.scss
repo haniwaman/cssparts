@@ -26,32 +26,33 @@
 		padding: 0;
 		border: none;
 	}
+}
 
-	// ゴースト
-	&.m-goast {
-		background-color: transparent;
-		color: #fff;
-		border-color: currentColor;
-	}
+// 影
+.c-btn--shadow {
+	box-shadow: 0 0 3px 0 rgba(#000, 0.16);
+}
 
-	// 影
-	&.m-shadow {
-		box-shadow: 0 0 3px 0 rgba(#000, 0.16);
-	}
+// ゴースト
+.c-btn--goast {
+	background-color: transparent;
+	color: #fff;
+	border-color: currentColor;
+}
 
-	&.m-arrow {
-		position: relative;
-		padding-right: 2.8em;
+// アロー
+.c-btn--arrow {
+	position: relative;
+	padding-right: 2.8em;
 
-		&::after {
-			content: "";
-			width: 1em;
-			height: 1em;
-			position: absolute;
-			right: 0.4em;
-			top: 50%;
-			transform: translateY(-50%);
-			background: transparent url(../img/arrow-right-w.png) no-repeat center center / cover;
-		}
+	&::after {
+		content: "";
+		width: 1em;
+		height: 1em;
+		position: absolute;
+		right: 0.4em;
+		top: 50%;
+		transform: translateY(-50%);
+		background: transparent url(../img/arrow-right-w.png) no-repeat center center / cover;
 	}
 }

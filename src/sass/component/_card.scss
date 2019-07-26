@@ -3,14 +3,6 @@
 	text-decoration: none;
 	background: #fff;
 	position: relative;
-
-	&.m-horizon {
-		display: flex;
-	}
-
-	&.m-shadow {
-		box-shadow: 0 0 5px 0 rgba(#000, 0.16);
-	}
 }
 
 .c-card__img {
@@ -68,4 +60,22 @@
 	color: #fff;
 	padding: 0.2em 0.8em;
 	font-size: 0.875em;
+}
+
+.c-card--horizon {
+	display: flex;
+}
+
+.c-card__img--horizon {
+	width: 150px;
+	padding: 0.4em;
+}
+
+.c-card__body--horizon {
+	width: calc(100% - 150px);
+	padding: 0.4em;
+}
+
+.c-card--shadow {
+	box-shadow: 0 0 5px 0 rgba(#000, 0.16);
 }

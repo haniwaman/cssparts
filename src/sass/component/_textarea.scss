@@ -17,10 +17,10 @@
 		box-shadow: none;
 		border: 1px solid $color-border--form--foucs;
 	}
+}
 
-	&.m-full {
-		width: 100%;
-	}
+.c-text--full {
+	width: 100%;
 }
 
 .c-textarea {
@@ -44,12 +44,12 @@
 		box-shadow: none;
 		border: 1px solid $color-border--form--foucs;
 	}
+}
 
-	&.m-resize {
-		resize: both;
-	}
+.c-textarea--resize {
+	resize: both;
+}
 
-	&.m-full {
-		width: 100%;
-	}
+.c-textarea--full {
+	width: 100%;
 }

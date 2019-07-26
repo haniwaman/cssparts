@@ -8,147 +8,147 @@
 	> :last-child {
 		margin-bottom: 0;
 	}
+}
 
-	> .c-box__title {
-		margin-bottom: 0.4em;
-		font-size: 1.1em;
-		font-weight: 700;
+.c-box__title {
+	margin-bottom: 0.4em;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+// 右下向きの吹き出しボックス
+.c-box--balloo-right {
+	position: relative;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 100%;
 	}
 
-	// 右下向きの吹き出しボックス
-	&.m-balloo-right {
-		position: relative;
-
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 100%;
-		}
-
-		&::before {
-			margin-top: -12.82px;
-			border: 12.82px solid transparent;
-			border-left: 12.82px solid $color-border-box;
-			z-index: 1;
-		}
-
-		&::after {
-			margin-top: -10px;
-			border: 10px solid transparent;
-			border-left: 10px solid #fff;
-			z-index: 2;
-		}
+	&::before {
+		margin-top: -12.82px;
+		border: 12.82px solid transparent;
+		border-left: 12.82px solid $color-border-box;
+		z-index: 1;
 	}
 
-	// 上向きの吹き出しボックス
-	&.m-balloo-top {
-		position: relative;
+	&::after {
+		margin-top: -10px;
+		border: 10px solid transparent;
+		border-left: 10px solid #fff;
+		z-index: 2;
+	}
+}
 
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			bottom: 100%;
-			left: 50%;
-		}
+// 上向きの吹き出しボックス
+.c-box--balloo-top {
+	position: relative;
 
-		&::before {
-			margin-left: -12.82px;
-			border: 12.82px solid transparent;
-			border-bottom: 12.82px solid $color-border-box;
-			z-index: 1;
-		}
-
-		&::after {
-			margin-left: -10px;
-			border: 10px solid transparent;
-			border-bottom: 10px solid #fff;
-			z-index: 2;
-		}
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
 	}
 
-	// 左向きの吹き出しボックス
-	&.m-balloo-left {
-		position: relative;
-
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			top: 50%;
-			right: 100%;
-		}
-
-		&::before {
-			margin-top: -12.82px;
-			border: 12.82px solid transparent;
-			border-right: 12.82px solid $color-border-box;
-			z-index: 1;
-		}
-
-		&::after {
-			margin-top: -10px;
-			border: 10px solid transparent;
-			border-right: 10px solid #fff;
-			z-index: 2;
-		}
+	&::before {
+		margin-left: -12.82px;
+		border: 12.82px solid transparent;
+		border-bottom: 12.82px solid $color-border-box;
+		z-index: 1;
 	}
 
-	// 下向きの吹き出しボックス
-	&.m-balloo-bottom {
-		position: relative;
+	&::after {
+		margin-left: -10px;
+		border: 10px solid transparent;
+		border-bottom: 10px solid #fff;
+		z-index: 2;
+	}
+}
 
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			top: 100%;
-			left: 50%;
-		}
+// 下向きの吹き出しボックス
+.c-box--balloo-bottom {
+	position: relative;
 
-		&::before {
-			margin-left: -12.82px;
-			border: 12.82px solid transparent;
-			border-top: 12.82px solid $color-border-box;
-			z-index: 1;
-		}
-
-		&::after {
-			margin-left: -10px;
-			border: 10px solid transparent;
-			border-top: 10px solid #fff;
-			z-index: 2;
-		}
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
 	}
 
-	// 見出しがボーダーに被るボックス
-	&.m-type1 {
-		position: relative;
-		padding-top: 1.35em;
-
-		> .c-box__title {
-			position: absolute;
-			top: -1em;
-			left: 50%;
-			transform: translateX(-50%);
-			background: #fff;
-			white-space: nowrap;
-			padding: 0.4em;
-			margin-bottom: 0;
-			line-height: 1;
-		}
+	&::before {
+		margin-left: -12.82px;
+		border: 12.82px solid transparent;
+		border-top: 12.82px solid $color-border-box;
+		z-index: 1;
 	}
 
-	// 見出しを塗りつぶしたボックス
-	&.m-type2 {
-
-		> .c-box__title {
-			background: $color-border-box;
-			color: #fff;
-			padding: 0.4em 0.8em;
-			margin: -0.8em -0.8em 0.8em -0.8em;
-		}
+	&::after {
+		margin-left: -10px;
+		border: 10px solid transparent;
+		border-top: 10px solid #fff;
+		z-index: 2;
 	}
+}
+
+// 左向きの吹き出しボックス
+.c-box--balloo-left {
+	position: relative;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 100%;
+	}
+
+	&::before {
+		margin-top: -12.82px;
+		border: 12.82px solid transparent;
+		border-right: 12.82px solid $color-border-box;
+		z-index: 1;
+	}
+
+	&::after {
+		margin-top: -10px;
+		border: 10px solid transparent;
+		border-right: 10px solid #fff;
+		z-index: 2;
+	}
+}
+
+// 見出しがボーダーに被るボックス
+.c-box--type1 {
+	position: relative;
+	padding-top: 1.35em;
+}
+
+.c-box__title--type1 {
+	position: absolute;
+	top: -1em;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fff;
+	white-space: nowrap;
+	padding: 0.4em;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+// 見出しを塗りつぶしたボックス
+.c-box--type2 {
+}
+
+.c-box__title--type2 {
+	background: $color-border-box;
+	color: #fff;
+	padding: 0.4em 0.8em;
+	margin: -0.8em -0.8em 0.8em -0.8em;
 }

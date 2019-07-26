@@ -14,41 +14,41 @@
 	th {
 		font-weight: 700;
 	}
+}
 
-	// 固定幅
-	&.m-fixed {
-		table-layout: fixed;
+// 固定幅
+.c-table--fixed {
+	table-layout: fixed;
+}
+
+// 行をストライプ
+.c-table--striped {
+
+	tr:nth-of-type(even) {
+		background: $color-table-background-active;
 	}
+}
 
-	// 行をストライプ
-	&.m-striped {
+// 横方向の罫線のみ
+.c-table--horizon {
+	border: none;
 
-		tr:nth-of-type(even) {
-			background: $color-table-background-active;
+	tr {
+		border-top: 1px solid $color-table-border;
+		border-bottom: 1px solid $color-table-border;
+
+		&:first-of-type {
+			border-top: none;
+		}
+
+		&:last-of-type {
+			border-bottom: none;
 		}
 	}
 
-	// 横方向の罫線のみ
-	&.m-horizon {
+	th,
+	td {
 		border: none;
-
-		tr {
-			border-top: 1px solid $color-table-border;
-			border-bottom: 1px solid $color-table-border;
-
-			&:first-of-type {
-				border-top: none;
-			}
-
-			&:last-of-type {
-				border-bottom: none;
-			}
-		}
-
-		th,
-		td {
-			border: none;
-		}
 	}
 }
 

@@ -9,12 +9,8 @@
 
 // マル
 .c-icon-circle {
-	display: inline-block;
-	width: $icon-widht;
-	height: $icon-height;
-	font-size: $icon-font;
-	position: relative;
-	overflow: hidden;
+
+	@extend .c-icon;
 
 	> span {
 		position: absolute;
@@ -31,12 +27,8 @@
 
 // バツ
 .c-icon-cross {
-	display: inline-block;
-	width: $icon-widht;
-	height: $icon-height;
-	font-size: $icon-font;
-	position: relative;
-	overflow: hidden;
+
+	@extend .c-icon;
 
 	> span {
 
@@ -64,12 +56,8 @@
 }
 
 .c-icon-hamburger {
-	display: inline-block;
-	width: $icon-widht;
-	height: $icon-height;
-	font-size: $icon-font;
-	position: relative;
-	overflow: hidden;
+
+	@extend .c-icon;
 
 	> span {
 		position: absolute;
@@ -106,12 +94,8 @@
 
 // チェック
 .c-icon-check {
-	display: inline-block;
-	width: $icon-widht;
-	height: $icon-height;
-	font-size: $icon-font;
-	position: relative;
-	overflow: hidden;
+
+	@extend .c-icon;
 
 	> span {
 		position: absolute;
@@ -129,12 +113,8 @@
 
 // アロー右
 .c-icon-arrow-right {
-	display: inline-block;
-	width: $icon-widht;
-	height: $icon-height;
-	font-size: $icon-font;
-	position: relative;
-	overflow: hidden;
+
+	@extend .c-icon;
 
 	> span {
 		position: absolute;
@@ -152,12 +132,8 @@
 
 // アロー下
 .c-icon-arrow-bottom {
-	display: inline-block;
-	width: $icon-widht;
-	height: $icon-height;
-	font-size: $icon-font;
-	position: relative;
-	overflow: hidden;
+
+	@extend .c-icon;
 
 	> span {
 		position: absolute;
@@ -175,12 +151,8 @@
 
 // アロー左
 .c-icon-arrow-left {
-	display: inline-block;
-	width: $icon-widht;
-	height: $icon-height;
-	font-size: $icon-font;
-	position: relative;
-	overflow: hidden;
+
+	@extend .c-icon;
 
 	> span {
 		position: absolute;
@@ -198,12 +170,8 @@
 
 // アロー上
 .c-icon-arrow-top {
-	display: inline-block;
-	width: $icon-widht;
-	height: $icon-height;
-	font-size: $icon-font;
-	position: relative;
-	overflow: hidden;
+
+	@extend .c-icon;
 
 	> span {
 		position: absolute;
@@ -221,12 +189,8 @@
 
 // 三角
 .c-icon-triangle {
-	display: inline-block;
-	width: $icon-widht;
-	height: $icon-height;
-	font-size: $icon-font;
-	position: relative;
-	overflow: hidden;
+
+	@extend .c-icon;
 
 	> span {
 		position: absolute;
@@ -244,12 +208,8 @@
 
 // ひし形
 .c-icon-rhombus {
-	display: inline-block;
-	width: $icon-widht;
-	height: $icon-height;
-	font-size: $icon-font;
-	position: relative;
-	overflow: hidden;
+
+	@extend .c-icon;
 
 	> span {
 		position: absolute;
@@ -266,12 +226,8 @@
 
 // 虫眼鏡
 .c-icon-glass {
-	display: inline-block;
-	width: $icon-widht;
-	height: $icon-height;
-	font-size: $icon-font;
-	position: relative;
-	overflow: hidden;
+
+	@extend .c-icon;
 
 	> span {
 		position: absolute;
@@ -301,12 +257,8 @@
 
 // 四角
 .c-icon-square {
-	display: inline-block;
-	width: $icon-widht;
-	height: $icon-height;
-	font-size: $icon-font;
-	position: relative;
-	overflow: hidden;
+
+	@extend .c-icon;
 
 	> span {
 		position: absolute;

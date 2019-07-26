@@ -3,41 +3,41 @@
 	height: 300px;
 	background: transparent url(../img/background.jpg) no-repeat center center / cover;
 	position: relative;
+}
 
-	// マスク
-	&.m-mask {
+// マスク
+.c-background--mask {
 
-		&::before {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background: rgba(#000, 0.3);
-		}
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(#000, 0.3);
 	}
+}
 
-	// 背景を固定
-	&.m-fixed {
-		background-attachment: fixed;
-	}
+// 背景を固定
+.c-background--fixed {
+	background-attachment: fixed;
+}
 
-	// ウインドウ幅いっぱいに広げる
-	&.m-window-full {
-		margin: 0 calc(50% - 50vw);
-		padding: 0 calc(50vw - 50%);
-		overflow: hidden;
-		width: 100vw;
-	}
+// ウインドウ幅いっぱいに広げる
+.c-background--window-full {
+	margin: 0 calc(50% - 50vw);
+	padding: 0 calc(50vw - 50%);
+	overflow: hidden;
+	width: 100vw;
+}
 
-	&.m-window-right {
-		margin: 0 auto 0 calc(50% - 50vw);
-		overflow: hidden;
-		width: 50vw;
-	}
+.c-background--window-right {
+	margin: 0 auto 0 calc(50% - 50vw);
+	overflow: hidden;
+	width: 50vw;
+}
 
-	&.m-window-left {
-		margin: 0 calc(50% - 50vw) 0 auto;
-		overflow: hidden;
-		width: 50vw;
-	}
+.c-background--window-left {
+	margin: 0 calc(50% - 50vw) 0 auto;
+	overflow: hidden;
+	width: 50vw;
 }

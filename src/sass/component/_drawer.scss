@@ -113,14 +113,14 @@
 	text-align: left;
 	color: $color-text;
 
-	.m-left & {
-		transform: translateX(-105%);
-		left: 0;
-		right: auto;
-	}
-
 	.is-checked & {
 		transform: translateX(0);
 		box-shadow: 6px 0 25px rgba(#000, 0.16);
 	}
+}
+
+.c-drawer__content--left {
+	transform: translateX(-105%);
+	left: 0;
+	right: auto;
 }

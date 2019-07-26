@@ -2,56 +2,56 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+}
 
-	// 2行
-	&.m-multiple-2 {
-		position: relative;
-		text-overflow: clip;
-		white-space: normal;
-		line-height: 1.6;
-		height: 1.6 * 2em; // line-height * 行数
+// 2行
+.c-ellipsis--multiple-2 {
+	position: relative;
+	text-overflow: clip;
+	white-space: normal;
+	line-height: 1.6;
+	height: 1.6 * 2em; // line-height * 行数
 
-		&::before {
-			content: "…";
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			background: #fff;
-		}
-
-		&::after {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background: #fff;
-			padding: 0 0.2em;
-		}
+	&::before {
+		content: "…";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background: #fff;
 	}
 
-	// 3行
-	&.m-multiple-3 {
-		position: relative;
-		text-overflow: clip;
-		white-space: normal;
-		line-height: 1.6;
-		height: 1.6 * 3em; // line-height * 行数
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		padding: 0 0.2em;
+	}
+}
 
-		&::before {
-			content: "…";
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			background: #fff;
-			padding: 0 0.2em;
-		}
+// 3行
+.c-ellipsis--multiple-3 {
+	position: relative;
+	text-overflow: clip;
+	white-space: normal;
+	line-height: 1.6;
+	height: 1.6 * 3em; // line-height * 行数
 
-		&::after {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background: #fff;
-		}
+	&::before {
+		content: "…";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background: #fff;
+		padding: 0 0.2em;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #fff;
 	}
 }

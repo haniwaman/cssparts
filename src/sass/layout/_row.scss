@@ -2,28 +2,28 @@
 	display: flex;
 	flex-wrap: wrap;
 	height: inherit;
+}
 
-	// 上下中央
-	&.m-middle {
-		align-items: center;
-	}
+// 上下中央
+.l-row--middle {
+	align-items: center;
+}
 
-	// 中央寄せ
-	&.m-center {
-		justify-content: center;
-	}
+// 中央寄せ
+.l-row--center {
+	justify-content: center;
+}
 
-	// 反転
-	&.m-reverse {
-		flex-direction: row-reverse;
-	}
+// 反転
+.l-row--reverse {
+	flex-direction: row-reverse;
 }
 
 // flexアイテム
 .l-row__col {
 	padding: 0;
 
-	.m-padding & {
+	.l-row--padding & {
 		padding: 0.8em;
 	}
 }

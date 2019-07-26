@@ -19,118 +19,118 @@
 			}
 		}
 	}
+}
 
-	// 黒丸
-	&.m-disc {
-		list-style-type: disc;
-		padding-left: 2em;
+// 黒丸
+.c-list--disc {
+	list-style-type: disc;
+	padding-left: 2em;
 
-		li {
+	li {
 
-			a {
-				display: inline;
-				padding: 0;
-			}
+		a {
+			display: inline;
+			padding: 0;
+		}
 
-			ul {
-				list-style-type: disc;
-				padding-left: 1.2em;
+		ul {
+			list-style-type: disc;
+			padding-left: 1.2em;
+		}
+	}
+}
+
+// 数字
+.c-list--decimal {
+	list-style-type: decimal;
+	padding-left: 2em;
+
+	li {
+
+		a {
+			display: inline;
+			padding: 0;
+		}
+
+		ul {
+			list-style-type: decimal;
+			padding-left: 1.2em;
+		}
+	}
+}
+
+// 文字前にアイコンを設置（改行しても中央）の縦並びのメニュー
+.c-list--arrow-start {
+
+	li {
+
+		a {
+			position: relative;
+			padding: 0.4em 0.8em 0.4em 1.8em;
+
+			&::before {
+				position: absolute;
+				top: 50%;
+				left: 0.4em;
+				transform: translateY(-50%);
+				content: "";
+				width: 1em;
+				height: 1em;
+				background: transparent url(../img/arrow-right.png) no-repeat center center / cover;
 			}
 		}
 	}
+}
 
-	// 数字
-	&.m-decimal {
-		list-style-type: decimal;
-		padding-left: 2em;
+// 文字の最後にアイコンをつけた縦並びのメニュー
+.c-list--arrow-end {
 
-		li {
+	> li {
 
-			a {
-				display: inline;
-				padding: 0;
-			}
+		a {
+			position: relative;
+			padding: 0.4em 1.8em 0.4em 0.8em;
 
-			ul {
-				list-style-type: decimal;
-				padding-left: 1.2em;
-			}
-		}
-	}
-
-	// 数字で順番にカウント
-	&.m-count {
-
-		> li {
-			counter-increment: number;
-
-			> a {
-				position: relative;
-				padding: 0.4em 0.8em 0.4em 2.4em;
-				text-decoration: none;
-				text-align: left;
-
-				&::after {
-					position: absolute;
-					top: 50%;
-					left: 0.4em;
-					min-width: 1.6em;
-					height: 1.6em;
-					line-height: 1;
-					text-align: center;
-					transform: translateY(-50%);
-					content: counter(number);
-					padding: 0.3em;
-					background: $color-list-count;
-					color: #fff;
-					font-size: 0.9em;
-				}
+			&::after {
+				position: absolute;
+				top: 50%;
+				right: 0.4em;
+				content: "";
+				width: 1em;
+				height: 1em;
+				background: transparent url(../img/arrow-right.png) no-repeat center center / cover;
+				transform: translateY(-50%);
 			}
 		}
 	}
+}
 
-	// 文字前にアイコンを設置（改行しても中央）の縦並びのメニュー
-	&.m-arrow-start {
+// 数字で順番にカウント
+.c-list--count {
 
-		li {
+	> li {
+		counter-increment: number;
 
-			a {
-				position: relative;
-				padding: 0.4em 0.8em 0.4em 1.8em;
+		> a {
+			position: relative;
+			padding: 0.4em 0.8em 0.4em 2.4em;
+			text-decoration: none;
+			text-align: left;
 
-				&::before {
-					position: absolute;
-					top: 50%;
-					left: 0.4em;
-					transform: translateY(-50%);
-					content: "";
-					width: 1em;
-					height: 1em;
-					background: transparent url(../img/arrow-right.png) no-repeat center center / cover;
-				}
-			}
-		}
-	}
-
-	// 文字の最後にアイコンをつけた縦並びのメニュー
-	&.m-arrow-end {
-
-		> li {
-
-			a {
-				position: relative;
-				padding: 0.4em 1.8em 0.4em 0.8em;
-
-				&::after {
-					position: absolute;
-					top: 50%;
-					right: 0.4em;
-					content: "";
-					width: 1em;
-					height: 1em;
-					background: transparent url(../img/arrow-right.png) no-repeat center center / cover;
-					transform: translateY(-50%);
-				}
+			&::after {
+				position: absolute;
+				top: 50%;
+				left: 0.4em;
+				min-width: 1.6em;
+				height: 1.6em;
+				line-height: 1;
+				text-align: center;
+				transform: translateY(-50%);
+				content: counter(number);
+				padding: 0.3em;
+				background: $color-list-count;
+				color: #fff;
+				font-size: 0.9em;
 			}
 		}
 	}

@@ -4,33 +4,6 @@
 	position: relative;
 	background: transparent url(../img/mainvisual.jpg) no-repeat center center / cover;
 	overflow: hidden;
-
-	&.m-mask {
-
-		&::before {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background: rgba(#000, 0.3);
-		}
-	}
-
-	// 動画を背景
-	&.m-video {
-		background: none;
-	}
-
-	// ヒーローイメージ
-	&.m-hero {
-		min-height: initial;
-		height: 100vh;
-	}
-
-	// ヒーローイメージ
-	&.m-high {
-		height: 700px;
-	}
 }
 
 .c-mainvisual__content {
@@ -64,4 +37,31 @@
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: -1;
+}
+
+.c-mainvisual--mask {
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(#000, 0.3);
+	}
+}
+
+// 高く
+.c-mainvisual--high {
+	height: 700px;
+}
+
+// ヒーローイメージ
+.c-mainvisual--hero {
+	min-height: initial;
+	height: 100vh;
+}
+
+// 動画を背景
+.c-mainvisual--video {
+	background: none;
 }

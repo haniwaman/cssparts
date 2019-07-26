@@ -1,259 +1,293 @@
 .c-heading {
 	padding: 0.4em 0.8em;
 	font-weight: 700;
+}
 
-	// 左のバーに破線の下線をプラスした見出し
-	&.m-type001 {
-		border-left: 0.4em solid $color-heading-border;
-		border-bottom: 0.1em dotted $color-gray;
-		text-align: left;
+// 左のバーに破線の下線をプラスした見出し
+.c-heading--type001 {
+
+	@extend .c-heading;
+	border-left: 0.4em solid $color-heading-border;
+	border-bottom: 0.1em dotted $color-gray;
+	text-align: left;
+}
+
+// 上下のバーに挟まれた見出し
+.c-heading--type002 {
+
+	@extend .c-heading;
+	border-top: 0.125em solid $color-heading-border;
+	border-bottom: 0.125em solid $color-heading-border;
+	text-align: left;
+}
+
+// 途中で色が変わる下線の見出し
+.c-heading--type003 {
+
+	@extend .c-heading;
+	padding: 0.1em 0.4em;
+	border-bottom: solid 0.125em $color-heading-border;
+	position: relative;
+	text-align: left;
+
+	&::after {
+		position: absolute;
+		content: "";
+		display: block;
+		left: 0;
+		bottom: -0.125em;
+		border-bottom: 0.125em solid $color-heading-border-dark;
+		width: 30%;
+		height: 100%;
 	}
+}
 
-	// 上下のバーに挟まれた見出し
-	&.m-type002 {
-		border-top: 0.125em solid $color-heading-border;
-		border-bottom: 0.125em solid $color-heading-border;
-		text-align: left;
+// ステッチ風のポップな見出し
+.c-heading--type004 {
+
+	@extend .c-heading;
+	background: $color-heading-background-thin;
+	padding: 0.4em 0.6em 0.3em;
+	text-align: left;
+	box-shadow: 0 0 0 0.2em $color-heading-background-thin;
+	border: 0.0417em dashed $color-heading-border;
+	border-radius: 0;
+}
+
+// 吹き出し風の見出し
+.c-heading--type005 {
+
+	@extend .c-heading;
+	background: $color-heading-background;
+	padding: 0.4em 0.8em 0.3em;
+	text-align: left;
+	position: relative;
+	color: #fff;
+
+	&::after {
+		position: absolute;
+		content: "";
+		top: 100%;
+		left: 20px;
+		border: 0.5em solid transparent;
+		border-top: 0.5em solid $color-heading-background;
+		width: 0;
+		height: 0;
 	}
+}
 
-	// 途中で色が変わる下線の見出し
-	&.m-type003 {
-		padding: 0.1em 0.4em;
-		border-bottom: solid 0.125em $color-heading-border;
-		position: relative;
-		text-align: left;
+// 点線の下線の見出し
+.c-heading--type006 {
 
-		&::after {
-			position: absolute;
-			content: "";
-			display: block;
-			left: 0;
-			bottom: -0.125em;
-			border-bottom: 0.125em solid $color-heading-border-dark;
-			width: 30%;
-			height: 100%;
-		}
+	@extend .c-heading;
+	border-bottom: 0.08em dashed $color-heading-border;
+	text-align: left;
+}
+
+// 下線の見出し
+.c-heading--type007 {
+
+	@extend .c-heading;
+	border-bottom: 0.125em solid $color-heading-border;
+	text-align: left;
+}
+
+// 左側がバーになっている見出し
+.c-heading--type008 {
+
+	@extend .c-heading;
+	border-left: 0.2em solid $color-heading-border;
+	text-align: left;
+}
+
+// 背景色のみシンプルな見出し
+.c-heading--type009 {
+
+	@extend .c-heading;
+	background: $color-heading-background;
+	text-align: left;
+	color: #fff;
+}
+
+// 端が折り曲がった見出し
+.c-heading--type010 {
+
+	@extend .c-heading;
+	background: $color-heading-background;
+	color: #fff;
+	position: relative;
+	text-align: left;
+
+	&::after {
+		border-color: #fff #fff $color-heading-background-thin;
+		border-style: solid;
+		border-width: 0 0.82em 0.82em 0;
+		box-shadow: -1px 1px 1px rgba(#000, 0.16);
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
+}
 
-	// ステッチ風のポップな見出し
-	&.m-type004 {
-		background: $color-heading-background-thin;
-		padding: 0.4em 0.6em 0.3em;
-		text-align: left;
-		box-shadow: 0 0 0 0.2em $color-heading-background-thin;
-		border: 0.0417em dashed $color-heading-border;
-		border-radius: 0;
+// 平行四辺形の見出し
+.c-heading--type011 {
+
+	@extend .c-heading;
+	color: #fff;
+	transform: skewX(-45deg);
+	padding: 0.4em 1.2em;
+	background: $color-heading-background;
+
+	span {
+		display: inline-block;
+		transform: skewX(45deg);
 	}
+}
 
-	// 吹き出し風の見出し
-	&.m-type005 {
+// 四角のアイコンから始まる見出し
+.c-heading--type012 {
+
+	@extend .c-heading;
+	padding: 0.4em 0.8em 0.4em 1.8em;
+	position: relative;
+	text-align: left;
+
+	&::before {
+		position: absolute;
+		content: "";
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0.4em;
+		width: 0.8em;
+		height: 0.8em;
 		background: $color-heading-background;
-		padding: 0.4em 0.8em 0.3em;
-		text-align: left;
-		position: relative;
-		color: #fff;
-
-		&::after {
-			position: absolute;
-			content: "";
-			top: 100%;
-			left: 20px;
-			border: 0.5em solid transparent;
-			border-top: 0.5em solid $color-heading-background;
-			width: 0;
-			height: 0;
-		}
 	}
+}
 
-	// 点線の下線の見出し
-	&.m-type006 {
-		border-bottom: 0.08em dashed $color-heading-border;
-		text-align: left;
-	}
+// 丸のアイコンから始まる見出し
+.c-heading--type013 {
 
-	// 下線の見出し
-	&.m-type007 {
-		border-bottom: 0.125em solid $color-heading-border;
-		text-align: left;
-	}
+	@extend .c-heading;
+	padding: 0.4em 0.8em 0.4em 1.8em;
+	position: relative;
+	text-align: left;
 
-	// 左側がバーになっている見出し
-	&.m-type008 {
-		border-left: 0.2em solid $color-heading-border;
-		text-align: left;
-	}
-
-	// 背景色のみシンプルな見出し
-	&.m-type009 {
+	&::before {
+		position: absolute;
+		content: "";
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0.4em;
+		width: 1em;
+		height: 1em;
+		border-radius: 50%;
 		background: $color-heading-background;
-		text-align: left;
-		color: #fff;
 	}
+}
 
-	// 端が折り曲がった見出し
-	&.m-type010 {
+// ひし形のアイコンから始まる見出し
+.c-heading--type014 {
+
+	@extend .c-heading;
+	padding: 0.4em 0.8em 0.4em 1.8em;
+	position: relative;
+	text-align: left;
+
+	&::before {
+		position: absolute;
+		content: "";
+		top: 50%;
+		transform: translateY(-50%) rotate(45deg);
+		left: 0.4em;
+		width: 0.8em;
+		height: 0.8em;
 		background: $color-heading-background;
-		color: #fff;
-		position: relative;
-		text-align: left;
-
-		&::after {
-			border-color: #fff #fff $color-heading-background-thin;
-			border-style: solid;
-			border-width: 0 0.82em 0.82em 0;
-			box-shadow: -1px 1px 1px rgba(#000, 0.16);
-			content: "";
-			position: absolute;
-			right: 0;
-			top: 0;
-		}
 	}
+}
 
-	// 平行四辺形の見出し
-	&.m-type011 {
-		color: #fff;
-		transform: skewX(-45deg);
-		padding: 0.4em 1.2em;
+// 短いバーから始まる見出し
+.c-heading--type015 {
+
+	@extend .c-heading;
+	padding: 0.4em 0.8em 0.4em 1em;
+	position: relative;
+	text-align: left;
+
+	&::before {
+		position: absolute;
+		content: "";
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0.4em;
+		width: 0.2em;
+		height: 0.8em;
 		background: $color-heading-background;
+	}
+}
 
-		span {
-			display: inline-block;
-			transform: skewX(45deg);
-		}
+// 長い線に挟まれた見出し
+.c-heading--type016 {
+
+	@extend .c-heading;
+	position: relative;
+	text-align: center;
+
+	span {
+		position: relative;
+		z-index: 2;
+		padding: 0.2em 0.6em;
+		background: #fff;
 	}
 
-	// 四角のアイコンから始まる見出し
-	&.m-type012 {
-		padding: 0.4em 0.8em 0.4em 1.8em;
+	&::before {
+		position: absolute;
+		content: "";
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background: $color-heading-background;
+		z-index: 1;
+	}
+}
+
+// 短い線に挟まれた見出し
+.c-heading--type017 {
+
+	@extend .c-heading;
+	position: relative;
+	text-align: center;
+
+	span {
 		position: relative;
-		text-align: left;
+		z-index: 2;
+		padding: 0.2em 0.6em;
+		background: #fff;
 
 		&::before {
 			position: absolute;
 			content: "";
 			top: 50%;
 			transform: translateY(-50%);
-			left: 0.4em;
-			width: 0.8em;
-			height: 0.8em;
-			background: $color-heading-background;
-		}
-	}
-
-	// 丸のアイコンから始まる見出し
-	&.m-type013 {
-		padding: 0.4em 0.8em 0.4em 1.8em;
-		position: relative;
-		text-align: left;
-
-		&::before {
-			position: absolute;
-			content: "";
-			top: 50%;
-			transform: translateY(-50%);
-			left: 0.4em;
-			width: 1em;
-			height: 1em;
-			border-radius: 50%;
-			background: $color-heading-background;
-		}
-	}
-
-	// ひし形のアイコンから始まる見出し
-	&.m-type014 {
-		padding: 0.4em 0.8em 0.4em 1.8em;
-		position: relative;
-		text-align: left;
-
-		&::before {
-			position: absolute;
-			content: "";
-			top: 50%;
-			transform: translateY(-50%) rotate(45deg);
-			left: 0.4em;
-			width: 0.8em;
-			height: 0.8em;
-			background: $color-heading-background;
-		}
-	}
-
-	// 短いバーから始まる見出し
-	&.m-type015 {
-		padding: 0.4em 0.8em 0.4em 1em;
-		position: relative;
-		text-align: left;
-
-		&::before {
-			position: absolute;
-			content: "";
-			top: 50%;
-			transform: translateY(-50%);
-			left: 0.4em;
-			width: 0.2em;
-			height: 0.8em;
-			background: $color-heading-background;
-		}
-	}
-
-	// 長い線に挟まれた見出し
-	&.m-type016 {
-		position: relative;
-		text-align: center;
-
-		span {
-			position: relative;
-			z-index: 2;
-			padding: 0.2em 0.6em;
-			background: #fff;
-		}
-
-		&::before {
-			position: absolute;
-			content: "";
-			top: 50%;
-			transform: translateY(-50%);
-			left: 0;
-			width: 100%;
+			right: 100%;
+			width: 1.6rem;
 			height: 1px;
 			background: $color-heading-background;
 			z-index: 1;
 		}
-	}
 
-	// 短い線に挟まれた見出し
-	&.m-type017 {
-		position: relative;
-		text-align: center;
-
-		span {
-			position: relative;
-			z-index: 2;
-			padding: 0.2em 0.6em;
-			background: #fff;
-
-			&::before {
-				position: absolute;
-				content: "";
-				top: 50%;
-				transform: translateY(-50%);
-				right: 100%;
-				width: 1.6rem;
-				height: 1px;
-				background: $color-heading-background;
-				z-index: 1;
-			}
-
-			&::after {
-				position: absolute;
-				content: "";
-				top: 50%;
-				transform: translateY(-50%);
-				left: 100%;
-				width: 1.6rem;
-				height: 1px;
-				background: $color-heading-background;
-				z-index: 1;
-			}
+		&::after {
+			position: absolute;
+			content: "";
+			top: 50%;
+			transform: translateY(-50%);
+			left: 100%;
+			width: 1.6rem;
+			height: 1px;
+			background: $color-heading-background;
+			z-index: 1;
 		}
 	}
 }
