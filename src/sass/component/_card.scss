@@ -7,20 +7,10 @@
 
 .c-card__img {
 	text-align: center;
-
-	.m-horizon & {
-		width: 150px;
-		padding: 0.4em;
-	}
 }
 
 .c-card__body {
 	padding: 0.4em;
-
-	.m-horizon & {
-		width: calc(100% - 150px);
-		padding: 0.4em;
-	}
 }
 
 .c-card__title {

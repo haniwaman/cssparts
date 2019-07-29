@@ -159,7 +159,7 @@ jQuery(function() {
 
 	// StickyのIE11対応
 	// https://blog.hiroyuki90.com/demo/position-sticky/stickyfill.min.js
-	let sticky = document.querySelectorAll(".m-sticky");
+	let sticky = document.querySelectorAll(".l-section--sticky");
 	Stickyfill.add(sticky);
 
 	// LazyLoad

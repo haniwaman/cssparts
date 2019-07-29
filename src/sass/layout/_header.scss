@@ -20,34 +20,34 @@
 }
 
 // スクロールしたら背景色を変更
-.l-header--scroll-background {
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: transparent;
-	transition: background 0.3s ease 0s;
+// .l-header--scroll-background {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	background: transparent;
+// 	transition: background 0.3s ease 0s;
 
-	[data-scroll="true"] & {
-		background: $header-background-scroll;
-		color: color-from-background($header-background-scroll);
-	}
-}
+// 	[data-scroll="true"] & {
+// 		background: $header-background-scroll;
+// 		color: color-from-background($header-background-scroll);
+// 	}
+// }
 
 // スクロール
-.l-header--scroll-down {
-	position: fixed;
-	top: 0;
-	left: 0;
-	transform: translateY(-$header-height);
-	transition: transform 0.3s ease 0s;
-	background: $header-background-scroll;
-	color: color-from-background($header-background-scroll);
+// .l-header--scroll-down {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	transform: translateY(-$header-height);
+// 	transition: transform 0.3s ease 0s;
+// 	background: $header-background-scroll;
+// 	color: color-from-background($header-background-scroll);
 
-	@include mq("tab") {
-		transform: translateY(-$header-height-pc);
-	}
+// 	@include mq("tab") {
+// 		transform: translateY(-$header-height-pc);
+// 	}
 
-	[data-scroll="true"] & {
-		transform: translateY(0);
-	}
-}
+// 	[data-scroll="true"] & {
+// 		transform: translateY(0);
+// 	}
+// }

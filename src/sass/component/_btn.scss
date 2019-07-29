@@ -1,7 +1,7 @@
 .c-btn {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 0.7em 2em;
+	padding: 0.3em 1.2em;
 	margin: 0;
 	background-image: none;
 	background-color: $color-btn;
@@ -55,4 +55,9 @@
 		transform: translateY(-50%);
 		background: transparent url(../img/arrow-right-w.png) no-repeat center center / cover;
 	}
+}
+
+// 大きい
+.c-btn--big {
+	padding: 0.5em 1.6em;
 }

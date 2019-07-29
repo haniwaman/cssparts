@@ -21,12 +21,6 @@
 		margin-right: 0;
 	}
 
-	&.m-current {
-		background: $color-pagenation-background-current;
-		border: 1px solid $color-pagenation-background-current;
-		color: #fff;
-	}
-
 	@include mq("tab") {
 
 		&:hover {
@@ -38,6 +32,9 @@
 }
 
 .c-pagenation__num--current {
+	background: $color-pagenation-background-current;
+	border: 1px solid $color-pagenation-background-current;
+	color: #fff;
 }
 
 .c-pagenation__num--prev {
