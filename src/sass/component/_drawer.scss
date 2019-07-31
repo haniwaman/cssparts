@@ -124,3 +124,12 @@
 	left: 0;
 	right: auto;
 }
+
+.c-drawer__content--top {
+	transform: translateY(-105%);
+	top: 0;
+	bottom: auto;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
