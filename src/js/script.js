@@ -9,6 +9,13 @@ jQuery(function() {
 	});
 
 	// ローディング判定
+	jQuery("body")
+		.delay(3000)
+		.queue(function() {
+			jQuery(this)
+				.attr("data-loading", "true")
+				.dequeue();
+		});
 	jQuery(window).on("load", function() {
 		jQuery("body").attr("data-loading", "true");
 	});
