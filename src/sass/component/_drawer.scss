@@ -145,7 +145,7 @@
 	max-width: 100%;
 	transition: all 0.5s linear 0s;
 
-	.is-checked & {
+	&.is-checked {
 		visibility: visible;
 		opacity: 1;
 	}
