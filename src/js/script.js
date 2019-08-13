@@ -33,9 +33,6 @@ jQuery(function() {
 	// .js-drawer
 	jQuery(".js-drawer").on("click", function(e) {
 		e.preventDefault();
-		// jQuery(this)
-		// 	.parent()
-		// 	.toggleClass("is-checked");
 		let targetClass = jQuery(this).attr("data-target");
 		jQuery("." + targetClass).toggleClass("is-checked");
 		return false;
