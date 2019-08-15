@@ -3,12 +3,12 @@
 
 .c-file__label {
 	padding: 0.4em 0.8em;
-	border: 1px solid $color-border--form;
+	border: 1px solid $form-border-color;
 	cursor: pointer;
 	background: #fff;
 	color: $color-text;
-	font-weight: $font-weight--base;
-	font-size: $font-size--base;
+	font-weight: $font-weight-base;
+	font-size: $font-size-base;
 }
 
 .c-file__input {

@@ -30,7 +30,7 @@
 	&::after {
 		content: "MENU";
 		display: block;
-		color: $color-drawer-text;
+		color: $drawer-text-color;
 		font-size: 8px;
 		text-align: center;
 		font-weight: 700;
@@ -59,7 +59,7 @@
 	right: 0;
 	left: 0;
 	display: block;
-	background-color: $color-drawer-bar;
+	background-color: $drawer-bar-color;
 	width: 100%;
 	height: $drawer-bar-height;
 	border-radius: 2px;

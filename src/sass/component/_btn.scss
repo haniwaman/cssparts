@@ -4,8 +4,8 @@
 	padding: 0.3em 1.2em;
 	margin: 0;
 	background-image: none;
-	background-color: $color-btn;
-	color: color-from-background($color-btn);
+	background-color: $button-background;
+	color: $button-color;
 	text-decoration: none;
 	border: 1px solid transparent;
 	border-radius: 0;

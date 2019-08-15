@@ -5,8 +5,8 @@
 }
 
 .c-pagenation__num {
-	background: $color-pagenation-background;
-	border: 1px solid $color-pagenation-background;
+	background: $pagenation-background;
+	border: 1px solid $pagenation-background;
 	color: $color-text;
 	height: 42px;
 	display: inline-block;
@@ -24,16 +24,16 @@
 	@include mq("tab") {
 
 		&:hover {
-			background: $color-pagenation-background-current;
-			border: 1px solid $color-pagenation-background-current;
+			background: $pagenation-background--current;
+			border: 1px solid $pagenation-background--current;
 			color: #fff;
 		}
 	}
 }
 
 .c-pagenation__num--current {
-	background: $color-pagenation-background-current;
-	border: 1px solid $color-pagenation-background-current;
+	background: $pagenation-background--current;
+	border: 1px solid $pagenation-background--current;
 	color: #fff;
 }
 

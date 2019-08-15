@@ -1,7 +1,7 @@
 .c-box {
 	display: inline-block;
 	background: #fff;
-	border: 2px solid $color-border-box;
+	border: 2px solid $box-border-color;
 	border-radius: 0;
 	padding: 0.8em;
 
@@ -31,7 +31,7 @@
 	&::before {
 		margin-top: -12.82px;
 		border: 12.82px solid transparent;
-		border-left: 12.82px solid $color-border-box;
+		border-left: 12.82px solid $box-border-color;
 		z-index: 1;
 	}
 
@@ -58,7 +58,7 @@
 	&::before {
 		margin-left: -12.82px;
 		border: 12.82px solid transparent;
-		border-bottom: 12.82px solid $color-border-box;
+		border-bottom: 12.82px solid $box-border-color;
 		z-index: 1;
 	}
 
@@ -85,7 +85,7 @@
 	&::before {
 		margin-left: -12.82px;
 		border: 12.82px solid transparent;
-		border-top: 12.82px solid $color-border-box;
+		border-top: 12.82px solid $box-border-color;
 		z-index: 1;
 	}
 
@@ -112,7 +112,7 @@
 	&::before {
 		margin-top: -12.82px;
 		border: 12.82px solid transparent;
-		border-right: 12.82px solid $color-border-box;
+		border-right: 12.82px solid $box-border-color;
 		z-index: 1;
 	}
 
@@ -147,7 +147,7 @@
 }
 
 .c-box__title--type2 {
-	background: $color-border-box;
+	background: $box-border-color;
 	color: #fff;
 	padding: 0.4em 0.8em;
 	margin: -0.8em -0.8em 0.8em -0.8em;

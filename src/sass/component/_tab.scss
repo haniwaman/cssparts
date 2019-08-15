@@ -4,25 +4,25 @@
 .c-tab__nav {
 	display: flex;
 	justify-content: center;
-	border-bottom: 2px solid $color-tab-border;
+	border-bottom: 2px solid $tab-border-color;
 }
 
 .c-tab__item {
 	display: block;
 	padding: 0.8em 1.6em;
-	background: $color-tab-background;
+	background: $tab-background;
 	margin-bottom: -2px;
 	transition: all 0.3s ease 0s;
 
 	&.is-checked {
-		background: $color-tab-background-active;
+		background: $tab-background--active;
 		color: #fff;
 	}
 
 	@include mq("tab") {
 
 		&:hover {
-			background: $color-tab-background-active;
+			background: $tab-background--active;
 			color: #fff;
 		}
 	}

@@ -128,8 +128,8 @@
 				transform: translateY(-50%);
 				content: counter(number);
 				padding: 0.3em;
-				background: $color-list-count;
-				color: #fff;
+				background: $list-count-background;
+				color: $list-count-color;
 				font-size: 0.9em;
 			}
 		}

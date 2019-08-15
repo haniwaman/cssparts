@@ -15,7 +15,7 @@
 			left: 0;
 			transform: translateY(-50%);
 			background: #fff;
-			border: 1px solid $color-border--form;
+			border: 1px solid $form-border-color;
 			border-radius: 50%;
 			width: 1em;
 			height: 1em;
@@ -28,11 +28,11 @@
 			top: 50%;
 			left: 0;
 			transform: translateY(-50%);
-			background: $color-radio;
+			background: $form-radio-color;
 			border-radius: 50%;
 			width: 1em;
 			height: 1em;
-			border: 1px solid $color-border--form--foucs;
+			border: 1px solid $form-border-color--foucs;
 			box-shadow: 0 0 0 0.1em #fff inset;
 			display: block;
 			opacity: 0;
@@ -45,7 +45,7 @@
 		+ span {
 
 			&::before {
-				border: 1px solid $color-border--form--foucs;
+				border: 1px solid $form-border-color--foucs;
 			}
 
 			&::after {
