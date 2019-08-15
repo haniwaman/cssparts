@@ -123,36 +123,6 @@ jQuery(function() {
 		parallaxItemObserver.observe(parallaxItem);
 	});
 
-	// Swiper
-	// https://idangero.us/swiper/
-	let swiper = new Swiper(".swiper-container", {
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev"
-		},
-		loop: true,
-		autoplay: {
-			delay: 3000,
-			disableOnInteraction: true
-		},
-		pagination: {
-			el: ".swiper-pagination",
-			type: "bullets",
-			clickable: true
-		},
-		speed: 300,
-		slidesPerView: 1,
-		spaceBetween: 0,
-		initialSlide: 0,
-		effect: "slide" // fade
-	});
-
-	// Lightbox
-	// https://lokeshdhakar.com/projects/lightbox2/
-	lightbox.option({
-		wrapAround: true
-	});
-
 	// 電話番号
 	let userAgent = navigator.userAgent;
 	if (userAgent.indexOf("iPhone") < 0 && userAgent.indexOf("Android") < 0) {
@@ -180,7 +150,6 @@ jQuery(function() {
 		entries.forEach(function(entry) {
 			if (entry.isIntersecting) {
 				let lazyItem = entry.target;
-				console.log(lazyItem);
 				if (lazyItem.dataset.hasOwnProperty("src")) {
 					lazyItem.src = lazyItem.dataset.src;
 				}
