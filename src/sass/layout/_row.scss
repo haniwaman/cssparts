@@ -22,6 +22,8 @@
 // flexアイテム
 .l-row__col {
 	padding: 0;
+	display: flex;
+	align-items: stretch;
 
 	.l-row--padding & {
 		padding: 0.8em;

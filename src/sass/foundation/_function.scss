@@ -1,0 +1,22 @@
+// 割り算
+@function division($numerator, $denominator) {
+
+	@return $numerator / $denominator;
+}
+
+// vw計算
+@function vw($windows_width, $font_size) {
+
+	@return $font_size / $windows_width * 100vw;
+}
+
+// 背景色の明度によって文字色を変える
+@function color-from-background($background-color) {
+	$color: $color-text;
+
+	@if lightness($background-color) < 70% {
+		$color: #fff;
+	}
+
+	@return $color;
+}
