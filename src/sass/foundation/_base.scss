@@ -146,6 +146,11 @@ td {
 	border: 1px solid $table-border-color;
 }
 
+th {
+	background: $table-th-background;
+	color: $table-th-color;
+}
+
 blockquote,
 q {
 	quotes: none;
@@ -168,3 +173,36 @@ textarea,
 select {
 	max-width: 100%;
 }
+
+/*
+input:not([type="file"]) {
+
+	@extend %text;
+}
+
+textarea {
+
+	@extend %textarea;
+}
+
+[type="submit"],
+[type="button"] {
+
+	@extend %button;
+}
+
+[type="radio"] {
+
+	@extend %radio;
+}
+
+[type="checkbox"] {
+
+	@extend %checkbox;
+}
+
+select {
+
+	@extend %select;
+}
+*/
