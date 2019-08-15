@@ -1,0 +1,38 @@
+.c-button {
+
+	@extend %button;
+}
+
+// 影
+.c-button--shadow {
+	box-shadow: 0 0 3px 0 rgba(#000, 0.16);
+}
+
+// ゴースト
+.c-button--goast {
+	background-color: transparent;
+	color: #fff;
+	border-color: currentColor;
+}
+
+// アロー
+.c-button--arrow {
+	position: relative;
+	padding-right: 2.8em;
+
+	&::after {
+		content: "";
+		width: 1em;
+		height: 1em;
+		position: absolute;
+		right: 0.4em;
+		top: 50%;
+		transform: translateY(-50%);
+		background: transparent url(../img/arrow-right-w.png) no-repeat center center / cover;
+	}
+}
+
+// 大きい
+.c-button--big {
+	padding: 0.5em 1.6em;
+}

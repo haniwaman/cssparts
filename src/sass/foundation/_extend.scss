@@ -1,0 +1,231 @@
+// ボタン
+%button {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.3em 1.2em;
+	margin: 0;
+	background-image: none;
+	background-color: $button-background;
+	color: $button-color;
+	text-decoration: none;
+	border: 1px solid transparent;
+	border-radius: 0;
+	font-size: 1em;
+	text-align: center;
+	-webkit-appearance: none;
+
+	&:not(:disabled) {
+		cursor: pointer;
+	}
+
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+
+	&::-moz-foucus-inner {
+		padding: 0;
+		border: none;
+	}
+}
+
+// テキスト
+%text {
+	width: auto;
+	padding: 0.4em 0.8em;
+	border-radius: 0;
+	background-image: none;
+	background-color: #fff;
+	border: 1px solid $form-border-color;
+	font-family: inherit;
+	font-size: 0.95em;
+	color: inherit;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border: 1px solid $form-border-color--foucs;
+	}
+}
+
+// テキストエリア
+%textarea {
+	width: auto;
+	height: 100px;
+	padding: 0.4em 0.8em;
+	border-radius: 0;
+	background-image: none;
+	background-color: #fff;
+	border: 1px solid $form-border-color;
+	font-family: inherit;
+	font-size: 0.95em;
+	color: inherit;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	resize: none;
+
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border: 1px solid $form-border-color--foucs;
+	}
+}
+
+// ラジオボタン
+%radio {
+	display: none;
+
+	+ span {
+		display: inline-block;
+		position: relative;
+		padding: 0 1em 0 1.4em;
+		margin: 0;
+		cursor: pointer;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			background: #fff;
+			border: 1px solid $form-border-color;
+			border-radius: 50%;
+			width: 1em;
+			height: 1em;
+			display: block;
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			background: $form-radio-color;
+			border-radius: 50%;
+			width: 1em;
+			height: 1em;
+			border: 1px solid $form-border-color--foucs;
+			box-shadow: 0 0 0 0.1em #fff inset;
+			display: block;
+			opacity: 0;
+			transition: all 0.3s ease 0s;
+		}
+	}
+
+	&:checked {
+
+		+ span {
+
+			&::before {
+				border: 1px solid $form-border-color--foucs;
+			}
+
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// チェックボックス
+%checkbox {
+	display: none;
+
+	+ span {
+		display: inline-block;
+		position: relative;
+		padding: 0 1em 0 1.4em;
+		margin: 0;
+		cursor: pointer;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			background: #fff;
+			border: 1px solid $form-border-color;
+			border-radius: 2px;
+			width: 1em;
+			height: 1em;
+			display: block;
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%) rotate(-45deg);
+			width: 1em;
+			height: 0.6em;
+			margin-top: -0.2em;
+			display: block;
+			border-left: 3px solid $form-checkbox-color;
+			border-bottom: 3px solid $form-checkbox-color;
+			transition: all 0.3s ease 0s;
+			opacity: 0;
+		}
+	}
+
+	&:checked {
+
+		+ span {
+
+			&::before {
+				border: 1px solid $form-border-color--foucs;
+			}
+
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// セレクトボックス
+%select {
+	width: auto;
+	padding: 0.4em 2.4em 0.4em 0.8em;
+	border-radius: 0;
+	background-color: #fff;
+	background-image: url(../img/arrow-bottom.png);
+	background-repeat: no-repeat;
+	background-size: 16px auto;
+	background-position: center right 0.2em;
+	border: 1px solid $form-border-color;
+	font-family: inherit;
+	font-size: 1em;
+	color: inherit;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+
+	&::-ms-expand {
+		display: none;
+	}
+
+	&:focus {
+		outline: none;
+		border: 1px solid $form-border-color--foucs;
+		box-shadow: none;
+	}
+
+	&[multiple] {
+		height: 100px;
+		padding: 0;
+		background-image: none;
+
+		option {
+			padding: 0.4em 1.2em 0.4em 0.4em;
+		}
+	}
+}
