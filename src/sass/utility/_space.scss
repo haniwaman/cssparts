@@ -29,34 +29,33 @@
 	margin-bottom: auto;
 }
 
-.u-m-0 {
-	margin: 0;
-}
+@for $i from 0 through 300 {
 
-.u-mx-0 {
-	margin-left: 0;
-	margin-right: 0;
-}
+	.u-mx-#{$i} {
+		margin-left: #{$i}px;
+		margin-right: #{$i}px;
+	}
 
-.u-my-0 {
-	margin-top: 0;
-	margin-bottom: 0;
-}
+	.u-my-#{$i} {
+		margin-top: #{$i}px;
+		margin-bottom: #{$i}px;
+	}
 
-.u-mt-0 {
-	margin-top: 0;
-}
+	.u-mt-#{$i} {
+		margin-top: #{$i}px;
+	}
 
-.u-mr-0 {
-	margin-right: 0;
-}
+	.u-mr-#{$i} {
+		margin-right: #{$i}px;
+	}
 
-.u-mb-0 {
-	margin-bottom: 0;
-}
+	.u-mb-#{$i} {
+		margin-bottom: #{$i}px;
+	}
 
-.u-ml-0 {
-	margin-left: 0;
+	.u-ml-#{$i} {
+		margin-left: #{$i}px;
+	}
 }
 
 // padding
