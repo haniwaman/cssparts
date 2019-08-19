@@ -5,7 +5,7 @@
 	background: $header-background;
 	color: $header-color;
 
-	@include mq("tab") {
+	@include mq-up("tab") {
 		height: $header-height-pc;
 	}
 }

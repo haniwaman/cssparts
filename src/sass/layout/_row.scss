@@ -79,7 +79,7 @@
 	width: (12 / 12 * 100%);
 }
 
-@include mq("tab") {
+@include mq-up("tab") {
 
 	.l-row__col01-tab {
 		width: (1 / 12 * 100%);
@@ -130,7 +130,7 @@
 	}
 }
 
-@include mq("pc") {
+@include mq-up("pc") {
 
 	.l-row__col01-pc {
 		width: (1 / 12 * 100%);

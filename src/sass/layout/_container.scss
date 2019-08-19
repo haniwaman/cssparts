@@ -5,12 +5,12 @@
 	max-width: 100%;
 	height: inherit;
 
-	@include mq("tab") {
+	@include mq-up("tab") {
 		padding-right: $pd-x-tab;
 		padding-left: $pd-x-tab;
 	}
 
-	@include mq("pc") {
+	@include mq-up("pc") {
 		padding-right: $pd-x-pc;
 		padding-left: $pd-x-pc;
 	}

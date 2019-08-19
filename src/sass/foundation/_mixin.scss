@@ -1,7 +1,15 @@
-// メディアクエリー
-@mixin mq($breakpoint: tab) {
+// メディアクエリー（スマホベース）
+@mixin mq-up($breakpoint: tab) {
 
-	@media #{map-get($breakpoints, $breakpoint)} {
+	@media #{map-get($breakpoints-up, $breakpoint)} {
+		@content;
+	}
+}
+
+// メディアクエリー（PCベース）
+@mixin mq-down($breakpoint: tab) {
+
+	@media #{map-get($breakpoints-down, $breakpoint)} {
 		@content;
 	}
 }

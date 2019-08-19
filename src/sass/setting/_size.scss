@@ -1,21 +1,22 @@
 // レイアウト幅
 $layout-width-canvas: 1440px;
 $layout-width-container: 1080px;
-
-// ブレークポイント（PCベース）
-// $breakpoints: (
-// 	"sp": "screen and (max-width: 767px)",
-// 	"tab+sp": "screen and (min-width: 768px) and (max-width: #{$layout-width-container - 1px})",
-// 	"tab": "screen and (max-width: #{$layout-width-container - 1px})",
-// 	"pc": "screen and (min-width: #{$layout-width-container})",
-// 	"ie": "screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)"
-// );
+$layout-width-smartphone: 768px;
 
 // ブレークポイント（スマホベース）
-$breakpoints: (
-	"sp": "(max-width: 767px)",
-	"tab-only": "(min-width: 768px) and (max-width: #{$layout-width-container - 1px})",
-	"tab": "(min-width: 768px)",
+$breakpoints-up: (
+	"sp": "(max-width: #{$layout-width-smartphone - 1px})",
+	"tab-only": "(min-width: #{$layout-width-smartphone}) and (max-width: #{$layout-width-container - 1px})",
+	"tab": "(min-width: #{$layout-width-smartphone})",
+	"pc": "(min-width: #{$layout-width-container})",
+	"ie": "(-ms-high-contrast: active), (-ms-high-contrast: none)"
+);
+
+// ブレークポイント（PCベース）
+$breakpoints-down: (
+	"sp": "(max-width: #{$layout-width-smartphone - 1px})",
+	"tab-only": "(min-width: #{$layout-width-smartphone}) and (max-width: #{$layout-width-container - 1px})",
+	"tab": "(max-width: #{$layout-width-container - 1px})",
 	"pc": "(min-width: #{$layout-width-container})",
 	"ie": "(-ms-high-contrast: active), (-ms-high-contrast: none)"
 );

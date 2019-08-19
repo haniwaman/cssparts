@@ -21,7 +21,7 @@
 		margin-right: 0;
 	}
 
-	@include mq("tab") {
+	@include mq-up("tab") {
 
 		&:hover {
 			background: $pagenation-background--current;

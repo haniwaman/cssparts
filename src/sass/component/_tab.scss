@@ -19,7 +19,7 @@
 		color: #fff;
 	}
 
-	@include mq("tab") {
+	@include mq-up("tab") {
 
 		&:hover {
 			background: $tab-background--active;
