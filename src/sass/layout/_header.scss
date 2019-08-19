@@ -1,6 +1,6 @@
 .l-header {
 	width: 100%;
-	height: $header-height;
+	height: $header-height-sp;
 	z-index: map-get($layer, "header");
 	background: $header-background;
 	color: $header-color;
