@@ -1,4 +1,4 @@
-.l-container {
+.l-inner {
 	margin: 0 auto;
 	padding: 0 $pd-x-sp;
 	width: $layout-width-container;
@@ -16,15 +16,15 @@
 	}
 }
 
-.l-container--wide {
+.l-inner--wide {
 	width: $layout-width-container * 1.1;
 }
 
-.l-container--narrow {
+.l-inner--narrow {
 	width: $layout-width-container * 0.9;
 }
 
-.l-container--full {
+.l-inner--full {
 	width: 100%;
 }
 
