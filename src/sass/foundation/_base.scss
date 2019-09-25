@@ -178,7 +178,18 @@ select {
 	max-width: 100%;
 }
 
-input:not([type="file"]) {
+[type="input"],
+[type="search"],
+[type="tel"],
+[type="url"],
+[type="email"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="month"],
+[type="week"],
+[type="time"],
+[type="datetime-local"] {
 
 	@extend %text;
 }
